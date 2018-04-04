@@ -141,12 +141,13 @@
 													<div class="col-md-12">
 														<label for="password2">Repeat Password</label>
 														<input type="password" class="form-control" id="password2">
+														<p id="confirmation"></p>
 													</div>
 												</div>
 
 												<div class="row form-group">
 													<div class="col-md-12">
-														<input type="submit" class="btn btn-primary" value="Sign up">
+														<button id="signup">Sign Up</button>
 													</div>
 												</div>
 											</form>
@@ -157,19 +158,19 @@
 												<div class="row form-group">
 													<div class="col-md-12">
 														<label for="username">Username or Email</label>
-														<input type="text" class="form-control" id="username">
+														<input type="text" class="form-control" id="username0">
 													</div>
 												</div>
 												<div class="row form-group">
 													<div class="col-md-12">
 														<label for="password">Password</label>
-														<input type="password" class="form-control" id="password">
+														<input type="password" class="form-control" id="password0">
 													</div>
 												</div>
 
 												<div class="row form-group">
 													<div class="col-md-12">
-														<input type="submit" class="btn btn-primary" value="Login">
+														<button id="signup">Login</button>
 													</div>
 												</div>
 											</form>
@@ -356,7 +357,21 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 	<script>
-		var signUp = document.get
+		var signUpButton = document.getElementById('signup');
+		var confirm = document.getElementById('confirmation');
+		
+		function buttonPress() {
+			var username = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
+			var repassword = document.getElementById('password2').value;
+			if (password == repassword) {
+				confirm.innerHTML = username + " has been created. Please log in.";
+			}
+			else {
+				confirm.innerHTML = "Password does not match. Please check again.";
+			}
+		}
+		signUpButton.addEventListener('click', buttonPress);
 	</script>
 
 	</body>
