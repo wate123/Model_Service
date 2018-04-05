@@ -113,7 +113,7 @@
 					<div class="row row-mt-15em">
 						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
 							<span class="intro-text-small">Welcome to the Model Web-based System</span>
-							<h1>Your problem is our solution.</h1>
+							<h1>Your problem is our solution.<br><br>Sign up today!</h1>
 						</div>
 						<div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
 							<div class="form-wrap">
@@ -170,7 +170,7 @@
 
 												<div class="row form-group">
 													<div class="col-md-12">
-														<button id="signup">Login</button>
+														<button id="login"><a href="animated-sign-up-flow-master/index.html">Login</a></button>
 													</div>
 												</div>
 											</form>
@@ -365,7 +365,7 @@
 			var password = document.getElementById('password').value;
 			var repassword = document.getElementById('password2').value;
 			if (password == repassword) {
-				confirm.innerHTML = username + " has been created. Please log in.";
+				confirm.innerHTML = "Your account with the username '"+ username + "' has been created. Please log in.";
 			}
 			else {
 				confirm.innerHTML = "Password does not match. Please check again.";
