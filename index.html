@@ -77,9 +77,6 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	<script src="js/signup.js"></script>
-
-
 	</head>
 	<body>
 
@@ -140,23 +137,23 @@
 									</ul>
 									<div class="tab-content">
 										<div class="tab-content-inner active" data-content="signup">
-											<form action="" method="post">
+											<form name="signupform" action=""  method="post">
 												<div class="row form-group">
 													<div class="col-md-12">
 														<label for="email">Email</label>
-														<input type="text" class="form-control" id="email" required>
+														<input type="text" class="form-control" id="email" name="signupemail">
 													</div>
 												</div>
 												<div class="row form-group">
 													<div class="col-md-12">
 														<label for="password">Password</label>
-														<input type="password" class="form-control" id="password" required>
+														<input type="password" class="form-control" id="password" name="signuppass">
 													</div>
 												</div>
 												<div class="row form-group">
 													<div class="col-md-12">
 														<label for="password2">Repeat Password</label>
-														<input type="password" class="form-control" id="password2" required>
+														<input type="password" class="form-control" id="password2" name="signuppass2">
 														<p id="confirmation"></p>
 													</div>
 												</div>
@@ -170,23 +167,24 @@
 										</div>
 
 										<div class="tab-content-inner" data-content="login">
-											<form action="#">
+											<form name="signinform" onsubmit="return emailSignIn()" action="#" method="post">
 												<div class="row form-group">
 													<div class="col-md-12">
 														<label for="email">Email</label>
-														<input type="text" class="form-control" id="username0">
+														<input type="text" class="form-control" id="username0" name="loginemail">
 													</div>
 												</div>
 												<div class="row form-group">
 													<div class="col-md-12">
 														<label for="password">Password</label>
-														<input type="password" class="form-control" id="password0">
+														<input type="password" class="form-control" id="password0" name="loginpass">
+														<p id="sign_in_confirmation"></p>
 													</div>
 												</div>
 
 												<div class="row form-group">
 													<div class="col-md-12">
-														<button id="login"><a href="animated-sign-up-flow-master/index.html">Login</a></button>
+														<button type="button" id="login"><a >Login</a></button>
 													</div>
 												</div>
 											</form>
@@ -372,45 +370,7 @@
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-	<script>
-		var signUpButton = document.getElementById('signup');
-		var confirm = document.getElementById('confirmation');
-		
-		function buttonPress() {
-			var email = document.getElementById('email').value;
-			var password = document.getElementById('password').value;
-			var repassword = document.getElementById('password2').value;
-			if(password === ""){
-                confirm.innerHTML = "Please enter your password."
-			}else {
-                if (password === repassword) {
-                    emailSignup(email, password);
-                    confirm.innerHTML = "Your account with the email '"+ email + "' has been created. Please log in.";
-                }
-                else {
-                    confirm.innerHTML = "Password does not match. Please check again.";
-                }
-			}
-		}
-
-        function emailSignup(email, password){
-            firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-                // Handle Errors.
-                var errorCode = error.code;
-                var errorMessage = error.message;
-                if(errorCode === 'auth/email-already-in-use'){
-                    alert('This email is already in use.');
-                }else if(errorCode === 'auth/invalid-email') {
-                    alert('The password is too weak.');
-                }else if(errorCode === 'auth/weak-password') {
-                    alert('The password is too weak.');
-                }else{
-                    alert(errorMessage);
-                }
-            });
-        }
-		signUpButton.addEventListener('click', buttonPress);
-	</script>
+	<script src="js/signup.js"></script>
 
 	</body>
 </html>
