@@ -143,8 +143,8 @@
 											<form action="" method="post">
 												<div class="row form-group">
 													<div class="col-md-12">
-														<label for="username">Username or Email</label>
-														<input type="text" class="form-control" id="username" required>
+														<label for="email">Email</label>
+														<input type="text" class="form-control" id="email" required>
 													</div>
 												</div>
 												<div class="row form-group">
@@ -163,18 +163,17 @@
 
 												<div class="row form-group">
 													<div class="col-md-12">
-														<button id="signup" onsubmit="emailSignup()">Sign Up</button>
+														<button type="button" id="signup">Sign Up</button>
 													</div>
 												</div>
 											</form>
 										</div>
 
-
 										<div class="tab-content-inner" data-content="login">
 											<form action="#">
 												<div class="row form-group">
 													<div class="col-md-12">
-														<label for="username">Username or Email</label>
+														<label for="email">Email</label>
 														<input type="text" class="form-control" id="username0">
 													</div>
 												</div>
@@ -378,16 +377,38 @@
 		var confirm = document.getElementById('confirmation');
 		
 		function buttonPress() {
-			var username = document.getElementById('username').value;
+			var email = document.getElementById('email').value;
 			var password = document.getElementById('password').value;
 			var repassword = document.getElementById('password2').value;
-			if (password == repassword) {
-				confirm.innerHTML = "Your account with the username '"+ username + "' has been created. Please log in.";
-			}
-			else {
-				confirm.innerHTML = "Password does not match. Please check again.";
+			if(password === ""){
+                confirm.innerHTML = "Please enter your password."
+			}else {
+                if (password === repassword) {
+                    emailSignup(email, password);
+                    confirm.innerHTML = "Your account with the email '"+ email + "' has been created. Please log in.";
+                }
+                else {
+                    confirm.innerHTML = "Password does not match. Please check again.";
+                }
 			}
 		}
+
+        function emailSignup(email, password){
+            firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+                // Handle Errors.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                if(errorCode === 'auth/email-already-in-use'){
+                    alert('This email is already in use.');
+                }else if(errorCode === 'auth/invalid-email') {
+                    alert('The password is too weak.');
+                }else if(errorCode === 'auth/weak-password') {
+                    alert('The password is too weak.');
+                }else{
+                    alert(errorMessage);
+                }
+            });
+        }
 		signUpButton.addEventListener('click', buttonPress);
 	</script>
 
