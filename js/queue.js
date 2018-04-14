@@ -100,7 +100,7 @@ function request(){
     else if (subject === "" )
         requestConfirm.innerHTML = "Please enter a Subject.";
     else{
-        window['pQueue'].enqueue(name,1);
+        window['priorityQueue'].enqueue(name,1);
         requestConfirm.innerHTML = "Request made. " + this.priorityQueue.items[1].element;
     }
 }
