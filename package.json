@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "This is a repo for our CSC-4330 class.",
   "main": "index.html",
-  "dependencies": {
-    "gentelella": "^1.4.0"
-  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

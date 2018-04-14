@@ -29,6 +29,16 @@
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
+    <script>
+        firebase.initializeApp({
+            apiKey: 'AIzaSyC4RrZ1ZAvMGLaDhGCB1TCfm4WzgdZT1cI',
+            authDomain: 'csc-4330.firebaseapp.com',
+            projectId: 'csc-4330'
+        });
+
+    </script>
   </head>
 
   <body class="nav-md">
@@ -49,7 +59,7 @@
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
-                <h2>John Doe</h2>
+                <h2>Admin</h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -190,11 +200,11 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="images/img.jpg" alt="">John Doe
+                    <img src="images/img.jpg" alt="">Admin
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="javascript:;"> Profile</a></li>
+                    <li><a href="profile.html"> Profile</a></li>
                     <li>
                       <a href="javascript:;">
                         <span class="badge bg-red pull-right">50%</span>
@@ -206,70 +216,70 @@
                   </ul>
                 </li>
 
-                <li role="presentation" class="dropdown">
-                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-envelope-o"></i>
-                    <span class="badge bg-green">6</span>
-                  </a>
-                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
-                    <li>
-                      <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="text-center">
-                        <a>
-                          <strong>See All Alerts</strong>
-                          <i class="fa fa-angle-right"></i>
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
+                <!--<li role="presentation" class="dropdown">-->
+                  <!--<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">-->
+                    <!--<i class="fa fa-envelope-o"></i>-->
+                    <!--<span class="badge bg-green">6</span>-->
+                  <!--</a>-->
+                  <!--<ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">-->
+                    <!--<li>-->
+                      <!--<a>-->
+                        <!--<span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>-->
+                        <!--<span>-->
+                          <!--<span>John Smith</span>-->
+                          <!--<span class="time">3 mins ago</span>-->
+                        <!--</span>-->
+                        <!--<span class="message">-->
+                          <!--Film festivals used to be do-or-die moments for movie makers. They were where...-->
+                        <!--</span>-->
+                      <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                      <!--<a>-->
+                        <!--<span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>-->
+                        <!--<span>-->
+                          <!--<span>John Smith</span>-->
+                          <!--<span class="time">3 mins ago</span>-->
+                        <!--</span>-->
+                        <!--<span class="message">-->
+                          <!--Film festivals used to be do-or-die moments for movie makers. They were where...-->
+                        <!--</span>-->
+                      <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                      <!--<a>-->
+                        <!--<span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>-->
+                        <!--<span>-->
+                          <!--<span>John Smith</span>-->
+                          <!--<span class="time">3 mins ago</span>-->
+                        <!--</span>-->
+                        <!--<span class="message">-->
+                          <!--Film festivals used to be do-or-die moments for movie makers. They were where...-->
+                        <!--</span>-->
+                      <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                      <!--<a>-->
+                        <!--<span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>-->
+                        <!--<span>-->
+                          <!--<span>John Smith</span>-->
+                          <!--<span class="time">3 mins ago</span>-->
+                        <!--</span>-->
+                        <!--<span class="message">-->
+                          <!--Film festivals used to be do-or-die moments for movie makers. They were where...-->
+                        <!--</span>-->
+                      <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                      <!--<div class="text-center">-->
+                        <!--<a>-->
+                          <!--<strong>See All Alerts</strong>-->
+                          <!--<i class="fa fa-angle-right"></i>-->
+                        <!--</a>-->
+                      <!--</div>-->
+                    <!--</li>-->
+                  <!--</ul>-->
+                <!--</li>-->
               </ul>
             </nav>
           </div>

@@ -1,4 +1,4 @@
-var signUpButton = document.getElementById('submit');
+var signUpButton = document.getElementById('send');
 var signInButton = document.getElementById('login');
 var confirm = document.getElementById('confirmation');
 var signInConfirm = document.getElementById('sign_in_confirmation');
@@ -49,7 +49,7 @@ function emailSignup(email, password){
     });
     return true;
 }
-//signUpButton.addEventListener('click', buttonPress);
+signUpButton.addEventListener('click', buttonPress);
 
 function emailSignIn() {
         var email = document.getElementById("username0").value;
