@@ -18,6 +18,8 @@
 
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script>
         // Initialize Firebase
@@ -257,7 +259,7 @@
                         <h2 class="StepTitle" align="center" style="font-size: large">Create Technician Account</h2>
                         <br>
                         <br>
-                        <form id="account" class="form-horizontal form-label-left" style="height: 300px" method="post">
+                        <form id="account" class="form-horizontal form-label-left" style="height: 300px" method="post" novalidate>
                           <div class="item form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Email <span class="required">*</span>
                             </label>
@@ -280,34 +282,42 @@
                           <div class="col-md-6 col-md-offset-3">
                             <button class="btn btn-primary" type="reset">Reset</button>
 
-                            <button id="send" type="button"  onclick="emailSignup()"  class="btn btn-success">Submit</button>
+                            <button id="send" type="button"  onsubmit="emailSignup()"  class="btn btn-success">Submit</button>
                             <script>
                                 function emailSignup(){
                                     var confirm = document.getElementById('confirmation');
                                     var email = document.getElementById('email').value;
                                     var password = document.getElementById('password').value;
-                                    var isError = false;
-                                    console.log('test');
-                                    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-                                        // Handle Errors.
+                                    var repassword = document.getElementById('password2').value;
+                                    var isValid;
+                                    if (password === repassword) {
+                                        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+                                            // Handle Errors.
 
-                                        var errorCode = error.code;
-                                        var errorMessage = error.message;
-                                        if(errorCode === 'auth/email-already-in-use'){
-                                            confirm.innerHTML = ('This email is already in use.');
-                                        }else if(errorCode === 'auth/invalid-email') {
-                                            confirm.innerHTML = ('The email is invalid.');
-                                        }else if(errorCode === 'auth/weak-password') {
-                                            confirm.innerHTML = ('The password is too weak.');
-                                        }else{
-                                            alert(errorMessage);
+                                            var errorCode = error.code;
+                                            var errorMessage = error.message;
+                                            if(errorCode === 'auth/email-already-in-use'){
+                                                confirm.innerHTML = ('This email is already in use.');
+                                            }else if(errorCode === 'auth/invalid-email') {
+                                                confirm.innerHTML = ('The email is invalid.');
+                                            }else if(errorCode === 'auth/weak-password') {
+                                                confirm.innerHTML = ('The password is too weak.');
+                                            }else{
+                                                alert(errorMessage);
+                                            }
+                                            isValid = false;
+                                        });
+                                        if (!isValid){
+                                            console.log(isValid);
+                                            confirm.innerHTML = "Success! Please click next.";
+                                            $('#wizard').smartWizard('goForward');
                                         }
-                                        isError = true;
-                                    });
-                                    if (!isError){
-
+                                    }else {
+                                        confirm.innerHTML = "Password Mismatch";
                                     }
+
                                 }
+
                             </script>
                             <p id="confirmation" style="color:red; font-size: 15px"></p>
                           </div>
@@ -321,7 +331,7 @@
                         <h2 class="StepTitle" align="center" style="font-size: large">Personal Information</h2>
                         <br>
                         <br>
-                        <form class="form-horizontal form-label-left" style="height: 300px" method="post">
+                        <form class="form-horizontal form-label-left"  style="height: 300px" method="post" novalidate>
                           <div class="item form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
                             </label>
@@ -352,6 +362,9 @@
                           </div>
                           <p id="confirmation2" style="color:red; font-size: 15px"></p>
                         </form>
+                        <script>
+                            // $('#wizard').smartWizard('disableStep',1);
+                        </script>
                       </div>
                     </div>
                     <!-- End SmartWizard Content -->
@@ -374,8 +387,7 @@
       </div>
     </div>
 
-    <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+
     <!-- Bootstrap -->
     <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->

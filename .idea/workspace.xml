@@ -2,56 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6ab8d53-56a9-4b79-bb6d-f640533ea96d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/splash.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/splash.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/production/TechnicianForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/TechnicianForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/calendar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/chartjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/chartjs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/chartjs2.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/chartjs2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/e_commerce.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/e_commerce.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/echarts.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/echarts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/fixed_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/fixed_footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/fixed_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/fixed_sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/form_advanced.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/form_advanced.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/form_buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/form_buttons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/form_upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/form_upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/form_validation.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/form_validation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/production/form_wizards.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/form_wizards.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/general_elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/general_elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/glyphicons.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/glyphicons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/icons.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/icons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/inbox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/index3.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/index3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/invoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/invoice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/js/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/js/signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/level2.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/level2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/adminLogin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/media_gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/media_gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/morisjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/morisjs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/other_charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/other_charts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/plain_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/plain_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/pricing_tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/pricing_tables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/project_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/project_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/tables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/tables_dynamic.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/tables_dynamic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/typography.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/widgets.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/widgets.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animated-sign-up-flow-master/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/animated-sign-up-flow-master/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features.html" beforeDir="false" afterPath="$PROJECT_DIR$/features.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/pricing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tour.html" beforeDir="false" afterPath="$PROJECT_DIR$/tour.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -65,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="137" column="52" lean-forward="true" selection-start-line="137" selection-start-column="52" selection-end-line="137" selection-end-column="52" />
+            <state relative-caret-position="161">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -77,7 +32,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/production/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="-11569">
               <caret line="207" column="15" selection-start-line="207" selection-start-column="15" selection-end-line="207" selection-end-column="15" />
             </state>
           </provider>
@@ -86,7 +41,7 @@
       <file leaf-file-name="adminLogin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/production/adminLogin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
+            <state relative-caret-position="456">
               <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -107,8 +62,8 @@
       <file leaf-file-name="form_wizards.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/production/form_wizards.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="377" column="45" selection-start-line="377" selection-end-line="378" />
+            <state relative-caret-position="524">
+              <caret line="401" column="44" selection-start-line="401" selection-start-column="44" selection-end-line="401" selection-end-column="44" />
               <folding>
                 <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -124,8 +79,33 @@
       <file leaf-file-name="jquery.smartWizard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4372">
-              <caret line="303" column="4" selection-start-line="303" selection-start-column="4" selection-end-line="303" selection-end-column="4" />
+            <state relative-caret-position="263">
+              <caret line="78" column="37" lean-forward="true" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TechnicianForm.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/production/TechnicianForm.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="457">
+              <caret line="393" column="74" selection-start-line="393" selection-start-column="74" selection-end-line="393" selection-end-column="74" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="validator.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/vendors/validator/validator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="173" column="45" selection-start-line="173" selection-start-column="45" selection-end-line="173" selection-end-column="45" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -145,9 +125,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>login</find>
-      <find>login.html</find>
-      <find>settin</find>
       <find>setting</find>
       <find>message</find>
       <find>images/</find>
@@ -174,7 +151,10 @@
       <find>onLeaveStep</find>
       <find>labelNext</find>
       <find>buttons</find>
+      <find>goForward</find>
       <find>log ou</find>
+      <find>submit</find>
+      <find>admin acc</find>
     </findStrings>
     <replaceStrings>
       <replace>fn</replace>
@@ -195,13 +175,13 @@
         <option value="$PROJECT_DIR$/admin/production/js/database.js" />
         <option value="$PROJECT_DIR$/admin/production/profile.html" />
         <option value="$PROJECT_DIR$/admin/production/form.html" />
-        <option value="$PROJECT_DIR$/admin/production/TechnicianForm.html" />
-        <option value="$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js" />
-        <option value="$PROJECT_DIR$/admin/production/form_wizards.html" />
         <option value="$PROJECT_DIR$/admin/production/index.html" />
         <option value="$PROJECT_DIR$/admin/production/login.html" />
         <option value="$PROJECT_DIR$/admin/production/js/signup.js" />
+        <option value="$PROJECT_DIR$/admin/production/TechnicianForm.html" />
+        <option value="$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/admin/production/form_wizards.html" />
       </list>
     </option>
   </component>
@@ -268,6 +248,43 @@
             <path>
               <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
               <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+              <item name="validator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -309,26 +326,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+  <component name="RunManager" selected="JavaScript Debug.TechnicianForm.html">
+    <configuration name="TechnicianForm.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/admin/production/TechnicianForm.html" />
     <configuration name="adminLogin.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/admin/production/adminLogin.html" />
     <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/index.html" />
-    <configuration name="index.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/index.html" />
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/admin/production/index.html" />
     <configuration name="smartwizard2-validation.htm" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/admin/vendors/jQuery-Smart-Wizard/smartwizard2-validation.htm" />
     <list>
-      <item itemvalue="JavaScript Debug.index.html (3)" />
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.index.html (1)" />
       <item itemvalue="JavaScript Debug.smartwizard2-validation.htm" />
       <item itemvalue="JavaScript Debug.adminLogin.html" />
+      <item itemvalue="JavaScript Debug.TechnicianForm.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.TechnicianForm.html" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.adminLogin.html" />
         <item itemvalue="JavaScript Debug.smartwizard2-validation.htm" />
         <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="JavaScript Debug.index.html (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -352,20 +369,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83573000" />
+    <option name="totallyTimeSpent" value="87999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="25" width="1280" height="1415" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24178404" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16573705" />
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="17" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="17" sideWeight="0.5003984" side_tool="true" weight="0.32868218" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32927758" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4996016" visible="true" weight="0.32868218" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -577,15 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/vendors/nprogress/nprogress.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -601,32 +609,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/js/smartwizard2-validation.php" />
-    <entry file="file://$PROJECT_DIR$/admin/vendors/validator/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1530" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/vendors/validator/validator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4140">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/TechnicianForm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="367" column="52" selection-start-line="367" selection-start-column="52" selection-end-line="367" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/smartwizard2-validation.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -634,20 +616,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js">
+    <entry file="file://$PROJECT_DIR$/admin/production/TechnicianForm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4372">
-          <caret line="303" column="4" selection-start-line="303" selection-start-column="4" selection-end-line="303" selection-end-column="4" />
+        <state relative-caret-position="457">
+          <caret line="393" column="74" selection-start-line="393" selection-start-column="74" selection-end-line="393" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/adminLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11569">
+          <caret line="207" column="15" selection-start-line="207" selection-start-column="15" selection-end-line="207" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/nprogress/nprogress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="435" column="35" selection-start-line="435" selection-start-column="35" selection-end-line="435" selection-end-column="35" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="78" column="37" lean-forward="true" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/js/signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/form_wizards.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="377" column="45" selection-start-line="377" selection-end-line="378" />
+        <state relative-caret-position="524">
+          <caret line="401" column="44" selection-start-line="401" selection-start-column="44" selection-end-line="401" selection-end-column="44" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -659,34 +693,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/adminLogin.html">
+    <entry file="file://$PROJECT_DIR$/admin/vendors/validator/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+        <state relative-caret-position="-540">
+          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/validator/validator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="173" column="45" selection-start-line="173" selection-start-column="45" selection-end-line="173" selection-end-column="45" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="207" column="15" selection-start-line="207" selection-start-column="15" selection-end-line="207" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/js/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="137" column="52" lean-forward="true" selection-start-line="137" selection-start-column="52" selection-end-line="137" selection-end-column="52" />
         </state>
       </provider>
     </entry>
