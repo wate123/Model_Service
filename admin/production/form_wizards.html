@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentelella Alela! | </title>
+    <title>Model Management | </title>
 
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Model Management</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -134,7 +134,7 @@
                       <li><a href="page_404.html">404 Error</a></li>
                       <li><a href="page_500.html">500 Error</a></li>
                       <li><a href="plain_page.html">Plain Page</a></li>
-                      <li><a href="login.html">Login Page</a></li>
+                      <li><a href="adminLogin.html">Login Page</a></li>
                       <li><a href="pricing_tables.html">Pricing Tables</a></li>
                     </ul>
                   </li>
@@ -173,7 +173,7 @@
               <a data-toggle="tooltip" data-placement="top" title="Lock">
                 <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
               </a>
-              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="adminLogin.html">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
             </div>
@@ -204,7 +204,7 @@
                       </a>
                     </li>
                     <li><a href="javascript:;">Help</a></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                    <li><a href="adminLogin.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                   </ul>
                 </li>
               </ul>
@@ -286,9 +286,11 @@
                                     var confirm = document.getElementById('confirmation');
                                     var email = document.getElementById('email').value;
                                     var password = document.getElementById('password').value;
+                                    var isError = false;
                                     console.log('test');
                                     firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
                                         // Handle Errors.
+
                                         var errorCode = error.code;
                                         var errorMessage = error.message;
                                         if(errorCode === 'auth/email-already-in-use'){
@@ -300,7 +302,11 @@
                                         }else{
                                             alert(errorMessage);
                                         }
+                                        isError = true;
                                     });
+                                    if (!isError){
+
+                                    }
                                 }
                             </script>
                             <p id="confirmation" style="color:red; font-size: 15px"></p>

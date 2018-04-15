@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentelella Alela! | </title>
+    <title>Model Management | </title>
 
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -43,10 +43,10 @@
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-            <form name="signinform" onsubmit="return emailSignIn()"  method="post">
-              <h1>Login Form</h1>
+            <form name="signinform"   method="post">
+              <h1>Management Login</h1>
               <div>
-                <input type="text" class="form-control" placeholder="Email" id="username0" name="loginemail" />
+                <input type="text" class="form-control" placeholder="Username" id="username0" name="loginName" />
               </div>
               <div>
                 <input type="password" class="form-control" placeholder="Password" id="password0" name="loginpass" />
@@ -54,9 +54,19 @@
               <div>
                 <p id="sign_in_confirmation" style="color:red; font-size: 15px" ></p>
               </div>
+              <script>
+                  function checkAdmin() {
+                      var user = document.getElementById('username0').value;
+                      var password = document.getElementById('password0').value;
+                      var confirm = document.getElementById('sign_in_confirmation');
+                      if(user == "admin" && password == "admin"){
+                          window.location.href = 'index.html';
+                      }
+                  }
+              </script>
               <div>
-                <a id="login" type="button" class="btn btn-default submit" >Log in</a>
-                <a class="reset_pass" href="#">Lost your password?</a>
+                <button id="login" type="button" onclick="checkAdmin()" class="btn btn-default submit" >Log in</button>
+                <!--<a class="reset_pass" href="#">Lost your password?</a>-->
               </div>
 
               <div class="clearfix"></div>
@@ -119,6 +129,5 @@
         <!--</div>-->
       </div>
     </div>
-    <script src="js/signup.js"></script>
   </body>
 </html>
