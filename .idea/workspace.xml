@@ -5,13 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/splash.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/splash.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/images/img.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/production/TechnicianForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/TechnicianForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/production/form_wizards.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/form_wizards.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/production/js/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/js/signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,26 +20,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4790528">
+    <splitter split-orientation="horizontal" split-proportion="0.6214511">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/admin/production/login.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="95" column="80" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="80" />
+                <state relative-caret-position="381">
+                  <caret line="95" column="80" lean-forward="true" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="80" />
                   <folding>
                     <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/admin/production/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="281">
-                  <caret line="207" column="24" lean-forward="true" selection-start-line="207" selection-start-column="24" selection-end-line="207" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -52,7 +39,7 @@
             <entry file="file://$PROJECT_DIR$/admin/production/profile.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="345">
-                  <caret line="56" column="65" lean-forward="true" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
+                  <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
                 </state>
               </provider>
             </entry>
@@ -66,51 +53,33 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TechnicianForm.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/admin/production/TechnicianForm.html">
+          <file leaf-file-name="form_wizards.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/admin/production/form_wizards.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="457">
-                  <caret line="347" column="72" selection-start-line="347" selection-start-column="72" selection-end-line="347" selection-end-column="72" />
+                <state relative-caret-position="280">
+                  <caret line="282" column="83" selection-start-line="282" selection-start-column="83" selection-end-line="282" selection-end-column="83" />
                   <folding>
-                    <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#h2#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="validator.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/admin/vendors/validator/validator.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-3191">
-                  <caret line="163" column="27" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="27" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/admin/vendors/validator/README.md">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1845" />
-              </provider>
+          <file leaf-file-name="fastclick.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/vendors/fastclick/lib/fastclick.js">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file leaf-file-name="form_validation.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/admin/production/form_validation.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="240">
-                  <caret line="16" column="51" lean-forward="true" selection-end-line="428" selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="database.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/admin/production/js/database.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret lean-forward="true" />
+                  <caret line="16" column="51" selection-end-line="428" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -123,7 +92,32 @@
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="315">
-                  <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="32" />
+                  <caret line="66" column="32" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TechnicianForm.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/production/TechnicianForm.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="347">
+                  <caret line="367" column="52" selection-start-line="367" selection-start-column="52" selection-end-line="367" selection-end-column="52" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="jquery.smartWizard.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="518">
+                  <caret line="179" column="53" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="53" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -131,8 +125,36 @@
           <file leaf-file-name="signup.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/admin/production/js/signup.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-60">
-                  <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+                <state relative-caret-position="579">
+                  <caret line="122" selection-start-line="122" selection-end-line="122" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="validator.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/vendors/validator/validator.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-4140">
+                  <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="form_wizards.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/production/form_wizards.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="720">
+                  <caret line="346" column="46" selection-start-line="346" selection-start-column="33" selection-end-line="346" selection-end-column="46" />
+                  <folding>
+                    <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#h2#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -152,7 +174,6 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>signup</find>
-      <find>confirmation</find>
       <find>sign</find>
       <find>login</find>
       <find>login.html</find>
@@ -169,9 +190,26 @@
       <find>search</find>
       <find>images/img.jpg</find>
       <find>send</find>
-      <find>minmax</find>
+      <find>vertical</find>
+      <find>form_wizard wizard_horizontal</find>
       <find>autocom</find>
+      <find>minmax</find>
+      <find>un</find>
+      <find>onFinish</find>
+      <find>wizard</find>
+      <find>enableFinishButton</find>
+      <find>labelNext</find>
+      <find>finish</find>
+      <find>confirmation</find>
+      <find>console.log('check');</find>
+      <find>onLeaveStep</find>
     </findStrings>
+    <replaceStrings>
+      <replace>fn</replace>
+      <replace>ln</replace>
+      <replace>n</replace>
+      <replace>confirmation2</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -190,6 +228,8 @@
         <option value="$PROJECT_DIR$/admin/production/form.html" />
         <option value="$PROJECT_DIR$/admin/production/js/signup.js" />
         <option value="$PROJECT_DIR$/admin/production/TechnicianForm.html" />
+        <option value="$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js" />
+        <option value="$PROJECT_DIR$/admin/production/form_wizards.html" />
       </list>
     </option>
   </component>
@@ -233,14 +273,14 @@
               <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
               <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
               <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
-              <item name="validator" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
@@ -267,6 +307,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/production/js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/admin/production/js" />
     </key>
@@ -283,26 +326,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.TechnicianForm.html">
+  <component name="RunManager" selected="JavaScript Debug.form_wizards.html">
     <configuration name="TechnicianForm.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/TechnicianForm.html" />
+    <configuration name="form_wizards.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/form_wizards.html" />
     <configuration name="index.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/index.html" />
     <configuration name="index.html (4)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/index.html" />
-    <configuration name="login.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/login.html" />
     <configuration name="profile.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/profile.html" />
     <list>
       <item itemvalue="JavaScript Debug.index.html (3)" />
-      <item itemvalue="JavaScript Debug.login.html" />
       <item itemvalue="JavaScript Debug.index.html (4)" />
       <item itemvalue="JavaScript Debug.profile.html" />
       <item itemvalue="JavaScript Debug.TechnicianForm.html" />
+      <item itemvalue="JavaScript Debug.form_wizards.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.form_wizards.html" />
         <item itemvalue="JavaScript Debug.TechnicianForm.html" />
         <item itemvalue="JavaScript Debug.profile.html" />
         <item itemvalue="JavaScript Debug.index.html (3)" />
         <item itemvalue="JavaScript Debug.index.html (4)" />
-        <item itemvalue="JavaScript Debug.login.html" />
       </list>
     </recent_temporary>
   </component>
@@ -321,25 +364,25 @@
       <workItem from="1523051096676" duration="18928000" />
       <workItem from="1523127213213" duration="709000" />
       <workItem from="1523409752146" duration="15702000" />
-      <workItem from="1523583029906" duration="10573000" />
+      <workItem from="1523583029906" duration="36429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52861000" />
+    <option name="totallyTimeSpent" value="78717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="0" width="1922" height="1081" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13178703" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16447021" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5002636" side_tool="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49973643" weight="0.3294979" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49920928" visible="true" weight="0.3211297" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49920928" weight="0.3211297" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -435,13 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="4716" column="4" selection-start-line="4716" selection-start-column="4" selection-end-line="4716" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pricing.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -462,34 +498,25 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="32" />
+          <caret line="66" column="32" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/js/database.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
-          <caret line="207" column="24" lean-forward="true" selection-start-line="207" selection-start-column="24" selection-end-line="207" selection-end-column="24" />
+          <caret line="207" column="24" selection-start-line="207" selection-start-column="24" selection-end-line="207" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/form_validation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="51" lean-forward="true" selection-end-line="428" selection-end-column="7" />
+          <caret line="16" column="51" selection-end-line="428" selection-end-column="7" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/vendors/validator/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1845" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/images/inbox.png">
@@ -501,34 +528,7 @@
     <entry file="file://$PROJECT_DIR$/admin/production/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="56" column="65" lean-forward="true" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/js/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="95" column="80" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="80" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/vendors/validator/validator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3191">
-          <caret line="163" column="27" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -539,6 +539,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="95" column="80" lean-forward="true" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="80" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/nprogress/nprogress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -546,12 +572,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15284" column="17" selection-start-line="15284" selection-start-column="17" selection-end-line="15284" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/js/smartwizard2-validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/validator/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1530" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="179" column="53" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="53" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/validator/validator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4140">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/build/js/custom.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/TechnicianForm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="347" column="72" selection-start-line="347" selection-start-column="72" selection-end-line="347" selection-end-column="72" />
+        <state relative-caret-position="347">
+          <caret line="367" column="52" selection-start-line="367" selection-start-column="52" selection-end-line="367" selection-end-column="52" />
           <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/fastclick/lib/fastclick.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/js/signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/form_wizards.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="282" column="83" selection-start-line="282" selection-start-column="83" selection-end-line="282" selection-end-column="83" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

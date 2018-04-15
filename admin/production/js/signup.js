@@ -4,9 +4,7 @@ var confirm = document.getElementById('confirmation');
 var signInConfirm = document.getElementById('sign_in_confirmation');
 
 function buttonPress() {
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-    var repassword = document.getElementById('password2').value;
+
     if(email === ""){
         document.signupform.signupemail.focus();
         confirm.innerHTML = "Please enter your Email."
@@ -28,7 +26,10 @@ function buttonPress() {
     }
 }
 
-function emailSignup(email, password){
+function emailSignup(){
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    console.log('test');
     firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
         // Handle Errors.
         var errorCode = error.code;
@@ -49,7 +50,7 @@ function emailSignup(email, password){
     });
     return true;
 }
-signUpButton.addEventListener('click', buttonPress);
+signUpButton.addEventListener('click', emailSignup);
 
 function emailSignIn() {
         var email = document.getElementById("username0").value;
@@ -94,3 +95,46 @@ function emailSignIn() {
 }
 
 signInButton.addEventListener('click', emailSignIn,false);
+
+<script>
+$('#submitForm').on('submit', function () {
+    var confirm = document.getElementById('confirmation');
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    console.log('test');
+    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+        // Handle Errors.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        if(errorCode === 'auth/email-already-in-use'){
+            confirm.innerHTML = ('This email is already in use.');
+        }else if(errorCode === 'auth/invalid-email') {
+            confirm.innerHTML = ('The email is invalid.');
+        }else if(errorCode === 'auth/weak-password') {
+            confirm.innerHTML = ('The password is too weak.');
+        }else{
+            alert(errorMessage);
+        }
+    });
+    console.log("success");
+    return false;
+})
+</script>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script>
+// Initialize Firebase
+var config = {
+    apiKey: "AIzaSyC4RrZ1ZAvMGLaDhGCB1TCfm4WzgdZT1cI",
+    authDomain: "csc-4330.firebaseapp.com",
+    databaseURL: "https://csc-4330.firebaseio.com",
+    projectId: "csc-4330",
+    storageBucket: "csc-4330.appspot.com",
+    messagingSenderId: "549352708672"
+};
+firebase.initializeApp(config);
+</script>

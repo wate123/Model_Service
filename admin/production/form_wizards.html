@@ -18,6 +18,19 @@
 
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC4RrZ1ZAvMGLaDhGCB1TCfm4WzgdZT1cI",
+            authDomain: "csc-4330.firebaseapp.com",
+            databaseURL: "https://csc-4330.firebaseio.com",
+            projectId: "csc-4330",
+            storageBucket: "csc-4330.appspot.com",
+            messagingSenderId: "549352708672"
+        };
+        firebase.initializeApp(config);
+    </script>
   </head>
 
   <body class="nav-md">
@@ -194,71 +207,6 @@
                     <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                   </ul>
                 </li>
-
-                <li role="presentation" class="dropdown">
-                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-envelope-o"></i>
-                    <span class="badge bg-green">6</span>
-                  </a>
-                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
-                    <li>
-                      <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="text-center">
-                        <a>
-                          <strong>See All Alerts</strong>
-                          <i class="fa fa-angle-right"></i>
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
               </ul>
             </nav>
           </div>
@@ -273,16 +221,6 @@
                 <h3>Form Wizards</h3>
               </div>
 
-              <div class="title_right">
-                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for...">
-                    <span class="input-group-btn">
-                              <button class="btn btn-default" type="button">Go!</button>
-                          </span>
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="clearfix"></div>
 
@@ -290,30 +228,9 @@
 
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Form Wizards <small>Sessions</small></h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Settings 1</a>
-                          </li>
-                          <li><a href="#">Settings 2</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
 
 
                     <!-- Smart Wizard -->
-                    <p>This is a basic form wizard example that inherits the colors from the selected scheme.</p>
                     <div id="wizard" class="form_wizard wizard_horizontal">
                       <ul class="wizard_steps">
                         <li>
@@ -321,7 +238,7 @@
                             <span class="step_no">1</span>
                             <span class="step_descr">
                                               Step 1<br />
-                                              <small>Step 1 description</small>
+                                              <small>Create Account</small>
                                           </span>
                           </a>
                         </li>
@@ -330,240 +247,105 @@
                             <span class="step_no">2</span>
                             <span class="step_descr">
                                               Step 2<br />
-                                              <small>Step 2 description</small>
+                                              <small>Personal Information</small>
                                           </span>
                           </a>
                         </li>
-                        <li>
-                          <a href="#step-3">
-                            <span class="step_no">3</span>
-                            <span class="step_descr">
-                                              Step 3<br />
-                                              <small>Step 3 description</small>
-                                          </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#step-4">
-                            <span class="step_no">4</span>
-                            <span class="step_descr">
-                                              Step 4<br />
-                                              <small>Step 4 description</small>
-                                          </span>
-                          </a>
-                        </li>
+
                       </ul>
                       <div id="step-1">
-                        <form class="form-horizontal form-label-left">
+                        <h2 class="StepTitle" align="center" style="font-size: large">Create Technician Account</h2>
+                        <br>
+                        <br>
+                        <form id="account" class="form-horizontal form-label-left" style="height: 300px" method="post">
+                          <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Email <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+                          <div class="item form-group">
+                            <label for="password" class="control-label col-md-3">Password*</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="password" type="password" name="password" data-validate-length="6,8" class="form-control col-md-7 col-xs-12" required="required">
+                            </div>
+                          </div>
+                          <div class="item form-group">
+                            <label for="password2" class="control-label col-md-3 col-sm-3 col-xs-12">Repeat Password*</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="password2" type="password" name="password2"  data-validate-linked="password" class="form-control col-md-7 col-xs-12" required="required">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-md-offset-3">
+                            <button class="btn btn-primary" type="reset">Reset</button>
 
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Last Name <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Middle Name / Initial</label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Gender</label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                              <div id="gender" class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                  <input type="radio" name="gender" value="male"> &nbsp; Male &nbsp;
-                                </label>
-                                <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                  <input type="radio" name="gender" value="female"> Female
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Date Of Birth <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
-                            </div>
+                            <button id="send" type="button"  onclick="emailSignup()"  class="btn btn-success">Submit</button>
+                            <script>
+                                function emailSignup(){
+                                    var confirm = document.getElementById('confirmation');
+                                    var email = document.getElementById('email').value;
+                                    var password = document.getElementById('password').value;
+                                    console.log('test');
+                                    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+                                        // Handle Errors.
+                                        var errorCode = error.code;
+                                        var errorMessage = error.message;
+                                        if(errorCode === 'auth/email-already-in-use'){
+                                            confirm.innerHTML = ('This email is already in use.');
+                                        }else if(errorCode === 'auth/invalid-email') {
+                                            confirm.innerHTML = ('The email is invalid.');
+                                        }else if(errorCode === 'auth/weak-password') {
+                                            confirm.innerHTML = ('The password is too weak.');
+                                        }else{
+                                            alert(errorMessage);
+                                        }
+                                    });
+                                }
+                            </script>
+                            <p id="confirmation" style="color:red; font-size: 15px"></p>
                           </div>
 
                         </form>
+
+
 
                       </div>
                       <div id="step-2">
-                        <h2 class="StepTitle">Step 2 Content</h2>
-                        <p>
-                          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                      </div>
-                      <div id="step-3">
-                        <h2 class="StepTitle">Step 3 Content</h2>
-                        <p>
-                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                      </div>
-                      <div id="step-4">
-                        <h2 class="StepTitle">Step 4 Content</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                      </div>
-
-                    </div>
-                    <!-- End SmartWizard Content -->
-
-
-
-
-
-                    <h2>Example: Vertical Style</h2>
-                    <!-- Tabs -->
-                    <div id="wizard_verticle" class="form_wizard wizard_verticle">
-                      <ul class="list-unstyled wizard_steps">
-                        <li>
-                          <a href="#step-11">
-                            <span class="step_no">1</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#step-22">
-                            <span class="step_no">2</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#step-33">
-                            <span class="step_no">3</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#step-44">
-                            <span class="step_no">4</span>
-                          </a>
-                        </li>
-                      </ul>
-
-                      <div id="step-11">
-                        <h2 class="StepTitle">Step 1 Content</h2>
-                        <form class="form-horizontal form-label-left">
-
-                          <span class="section">Personal Info</span>
-
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3" for="first-name">First Name <span class="required">*</span>
+                        <h2 class="StepTitle" align="center" style="font-size: large">Personal Information</h2>
+                        <br>
+                        <br>
+                        <form class="form-horizontal form-label-left" style="height: 300px" method="post">
+                          <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
                             </label>
-                            <div class="col-md-6 col-sm-6">
-                              <input type="text" id="first-name2" required="required" class="form-control col-md-7 col-xs-12">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="first-name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="1" name="name" placeholder="John" required="required" type="text">
                             </div>
                           </div>
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3" for="last-name">Last Name <span class="required">*</span>
+                          <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Last Name <span class="required">*</span>
                             </label>
-                            <div class="col-md-6 col-sm-6">
-                              <input type="text" id="last-name2" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="last-name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="1" name="name" placeholder="Doe" required="required" type="text">
                             </div>
                           </div>
-                          <div class="form-group">
-                            <label for="middle-name" class="control-label col-md-3 col-sm-3">Middle Name / Initial</label>
-                            <div class="col-md-6 col-sm-6">
-                              <input id="middle-name2" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3">Gender</label>
-                            <div class="col-md-6 col-sm-6">
-                              <div id="gender2" class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                  <input type="radio" name="gender" value="male"> &nbsp; Male &nbsp;
-                                </label>
-                                <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                  <input type="radio" name="gender" value="female" checked=""> Female
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3">Date Of Birth <span class="required">*</span>
+                          <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="age">Age <span class="required">*</span>
                             </label>
-                            <div class="col-md-6 col-sm-6">
-                              <input id="birthday2" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input type="number" id="age" name="age" required="required" data-validate-minmax="10,100" class="form-control col-md-7 col-xs-12">
                             </div>
                           </div>
-
+                          <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="telephone">Telephone <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input type="tel" id="telephone" name="phone" required="required" data-validate-length-range="8,20" class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+                          <p id="confirmation2" style="color:red; font-size: 15px"></p>
                         </form>
-                      </div>
-                      <div id="step-22">
-                        <h2 class="StepTitle">Step 2 Content</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                      </div>
-                      <div id="step-33">
-                        <h2 class="StepTitle">Step 3 Content</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                      </div>
-                      <div id="step-44">
-                        <h2 class="StepTitle">Step 4 Content</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
                       </div>
                     </div>
                     <!-- End SmartWizard Content -->
@@ -591,14 +373,195 @@
     <!-- Bootstrap -->
     <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->
-    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!--<script src="../vendors/fastclick/lib/fastclick.js"></script>-->
     <!-- NProgress -->
     <script src="../vendors/nprogress/nprogress.js"></script>
     <!-- jQuery Smart Wizard -->
     <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
+    <!-- validator -->
+    <script src="../vendors/validator/validator.js"></script>
 
+    <!--&lt;!&ndash;<script >&ndash;&gt;-->
+        <!--// $(document).ready(function(){-->
+        <!--//     // Smart Wizard-->
+        <!--//-->
+        <!--//     $('#wizard').smartWizard({-->
+        <!--//         onLeaveStep:leaveAStepCallback,-->
+        <!--//         onFinish:onFinishCallback(),-->
+        <!--//         enableFinishButton:true,-->
+        <!--//     });-->
+
+            <!--// function leaveAStepCallback(obj){-->
+            <!--//     console.log('check1');-->
+            <!--//     var step_num= obj.attr('rel');-->
+            <!--//     return validateSteps(step_num);-->
+            <!--// }-->
+            <!--//-->
+            <!--// function onFinishCallback(){-->
+            <!--//-->
+            <!--//     if(validateAllSteps()){-->
+            <!--//         console.log('check');-->
+            <!--//         $('form').submit();-->
+            <!--//     }-->
+            <!--// }-->
+            <!--//-->
+            <!--// // Email Validation-->
+            <!--// function isValidEmailAddress(emailAddress) {-->
+            <!--//     var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);-->
+            <!--//     return pattern.test(emailAddress);-->
+            <!--// }-->
+            <!--// function isTelephone(str) {-->
+            <!--//     var a = /^(1\s|1|)?((\(\d{3}\))|\d{3})(\-|\s)?(\d{3})(\-|\s)?(\d{4})$/.test(str);-->
+            <!--//     alert(a);-->
+            <!--// }-->
+            <!--//-->
+            <!--// function validateStep1() {-->
+            <!--//     var isValid = true;-->
+            <!--//     //validate email-->
+            <!--//     var email = $('#email').val();-->
+            <!--//     if(email && email.length > 0){-->
+            <!--//         if(!isValidEmailAddress(email)){-->
+            <!--//             isValid = false;-->
+            <!--//             $('#confirmation').html('Email is invalid').show();-->
+            <!--//         }else{-->
+            <!--//             $('#confirmation').html('').hide();-->
+            <!--//         }-->
+            <!--//     }else{-->
+            <!--//         isValid = false;-->
+            <!--//         $('#confirmation').html('Please enter email').show();-->
+            <!--//     }-->
+            <!--//-->
+            <!--//     // validate password-->
+            <!--//     var pw = $('#password').val();-->
+            <!--//     if(!pw && pw.length <= 0){-->
+            <!--//         isValid = false;-->
+            <!--//         $('#msg_cpassword').html('Please fill password').show();-->
+            <!--//     }else{-->
+            <!--//         $('#msg_cpassword').html('').hide();-->
+            <!--//     }-->
+            <!--//-->
+            <!--//     // validate confirm password-->
+            <!--//     var cpw = $('#password2').val();-->
+            <!--//     if(!cpw && cpw.length <= 0){-->
+            <!--//         isValid = false;-->
+            <!--//         $('#msg_cpassword').html('Please fill confirm password').show();-->
+            <!--//     }else{-->
+            <!--//         $('#msg_cpassword').html('').hide();-->
+            <!--//     }-->
+            <!--//-->
+            <!--//     // validate password match-->
+            <!--//     if(pw && pw.length > 0 && cpw && cpw.length > 0){-->
+            <!--//         if(pw != cpw){-->
+            <!--//             isValid = false;-->
+            <!--//             $('#msg_cpassword').html('Password mismatch').show();-->
+            <!--//         }else{-->
+            <!--//             $('#msg_cpassword').html('').hide();-->
+            <!--//         }-->
+            <!--//     }-->
+            <!--//     return isValid;-->
+            <!--// }-->
+            <!--//-->
+            <!--// function validateStep2() {-->
+            <!--//     var isValid = true;-->
+            <!--//     //validate First name-->
+            <!--//     var fn = $('#first-name').val();-->
+            <!--//     if(!fn && fn.length <= 0){-->
+            <!--//         isValid = false;-->
+            <!--//         $('#confirmation2').html('Please fill First Name').show();-->
+            <!--//     }else{-->
+            <!--//         $('#confirmation2').html('').hide();-->
+            <!--//     }-->
+            <!--//-->
+            <!--//     //validate Last name-->
+            <!--//     var ln = $('#last-name').val();-->
+            <!--//     if(!ln && ln.length <= 0){-->
+            <!--//         isValid = false;-->
+            <!--//         $('#confirmation2').html('Please fill Last Name').show();-->
+            <!--//     }else{-->
+            <!--//         $('#confirmation2').html('').hide();-->
+            <!--//     }-->
+            <!--//-->
+            <!--//     //validate Age-->
+            <!--//     var n = $('#number').val();-->
+            <!--//     if(!n){-->
+            <!--//         isValid = false;-->
+            <!--//         $('#confirmation2').html('Please fill age').show();-->
+            <!--//     }else if (isNaN(n) || parseInt(n,10) !== n) {-->
+            <!--//         isValid = false;-->
+            <!--//         $('#confirmation2').html('Please enter integer').show();-->
+            <!--//     }else{-->
+            <!--//         $('#confirmation2').html('').hide();-->
+            <!--//     }-->
+            <!--//     //validate email  email-->
+            <!--//     var phone = $('#telephone').val();-->
+            <!--//     if(phone && phone.length > 0){-->
+            <!--//         if(!isValidEmailAddress(phone)){-->
+            <!--//             isValid = false;-->
+            <!--//             $('#confirmation2').html('Phone number is invalid').show();-->
+            <!--//         }else{-->
+            <!--//             $('#confirmation2').html('').hide();-->
+            <!--//         }-->
+            <!--//     }else{-->
+            <!--//         isValid = false;-->
+            <!--//         $('#confirmation2').html('Please enter Phone Number').show();-->
+            <!--//     }-->
+            <!--//     return isValid;-->
+            <!--// }-->
+            <!--//-->
+            <!--//-->
+            <!--// // Your Step validation logic-->
+            <!--// function validateSteps(stepnumber){-->
+            <!--//     var isStepValid = true;-->
+            <!--//     // validate step 1-->
+            <!--//     if(stepnumber === 1){-->
+            <!--//         if (validateStep1() === false){-->
+            <!--//           isStepValid = false;-->
+            <!--//           $('#wizard').smartWizard('showMessage','Please correct the errors in step'+step+ ' and click next.');-->
+            <!--//           $('#wizard').smartWizard('setError',{stepnum:step,iserror:true});-->
+            <!--//         }else{-->
+            <!--//             $('#wizard').smartWizard('hideMessage');-->
+            <!--//             $('#wizard').smartWizard('setError',{stepnum:step,iserror:false});-->
+            <!--//         }-->
+            <!--//     }-->
+            <!--//     if (stepnumber === 2){-->
+            <!--//         if (validateStep2() === false){-->
+            <!--//             isStepValid = false;-->
+            <!--//             $('#wizard').smartWizard('showMessage','Please correct the errors in step'+step+ ' and click next.');-->
+            <!--//             $('#wizard').smartWizard('setError',{stepnum:step,iserror:true});-->
+            <!--//         }else{-->
+            <!--//             $('#wizard').smartWizard('hideMessage');-->
+            <!--//             $('#wizard').smartWizard('setError',{stepnum:step,iserror:false});-->
+            <!--//         }-->
+            <!--//     }-->
+            <!--//      return isStepValid;-->
+            <!--// }-->
+            <!--//-->
+            <!--//-->
+            <!--// function validateAllSteps(){-->
+            <!--//     var isStepValid = true;-->
+            <!--//     if(validateStep1() == false){-->
+            <!--//         isStepValid = false;-->
+            <!--//         $('#wizard').smartWizard('setError',{stepnum:1,iserror:true});-->
+            <!--//     }else{-->
+            <!--//         $('#wizard').smartWizard('setError',{stepnum:1,iserror:false});-->
+            <!--//     }-->
+            <!--//-->
+            <!--//     if(validateStep2() == false){-->
+            <!--//         isStepValid = false;-->
+            <!--//         $('#wizard').smartWizard('setError',{stepnum:2,iserror:true});-->
+            <!--//     }else{-->
+            <!--//         $('#wizard').smartWizard('setError',{stepnum:2,iserror:false});-->
+            <!--//     }-->
+            <!--//-->
+            <!--//     if(!isStepValid){-->
+            <!--//         $('#wizard').smartWizard('showMessage','Please correct the errors in the steps and continue');-->
+            <!--//     }                return isStepValid;-->
+            <!--// }-->
+
+        <!--// });-->
+    <!--&lt;!&ndash;</script>&ndash;&gt;-->
 	
   </body>
 </html>
