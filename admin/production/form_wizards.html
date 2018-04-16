@@ -282,7 +282,7 @@
                           <div class="col-md-6 col-md-offset-3">
                             <button class="btn btn-primary" type="reset">Reset</button>
 
-                            <button id="send" type="button"  onsubmit="emailSignup()"  class="btn btn-success">Submit</button>
+                            <button id="send" type="button"  onsubmit="afterSubmit()"  class="btn btn-success">Submit</button>
                             <script>
                                 function emailSignup(){
                                     var confirm = document.getElementById('confirmation');
@@ -290,10 +290,10 @@
                                     var password = document.getElementById('password').value;
                                     var repassword = document.getElementById('password2').value;
                                     var isValid;
+
                                     if (password === repassword) {
                                         firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
                                             // Handle Errors.
-
                                             var errorCode = error.code;
                                             var errorMessage = error.message;
                                             if(errorCode === 'auth/email-already-in-use'){
@@ -307,15 +307,18 @@
                                             }
                                             isValid = false;
                                         });
-                                        if (!isValid){
-                                            console.log(isValid);
-                                            confirm.innerHTML = "Success! Please click next.";
-                                            $('#wizard').smartWizard('goForward');
-                                        }
+                                        isValid = true;
+                                        return isValid;
                                     }else {
                                         confirm.innerHTML = "Password Mismatch";
                                     }
+                                }
+                                function afterSubmit() {
+                                    if (emailSignup()){
+                                        window.setTimeout($("#wizard").smartWizard('goForward'), 10000);
 
+
+                                    }
                                 }
 
                             </script>
@@ -336,7 +339,7 @@
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input id="first-name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="1" name="name" placeholder="John" required="required" type="text">
+                              <input id="first-name" class="form-control col-md-7 col-xs-12"  data-validate-words="1" name="name" placeholder="John" required="required" type="text">
                             </div>
                           </div>
                           <div class="item form-group">
@@ -350,20 +353,33 @@
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="age">Age <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input type="number" id="age" name="age" required="required" data-validate-minmax="10,100" class="form-control col-md-7 col-xs-12">
+                              <input type="number" id="age" name="age" pattern="numeric" required="required" data-validate-minmax="13,100" class="form-control col-md-7 col-xs-12">
                             </div>
                           </div>
                           <div class="item form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="telephone">Telephone <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input type="tel" id="telephone" name="phone" required="required" data-validate-length-range="8,20" class="form-control col-md-7 col-xs-12">
+                              <input type="tel" id="telephone" name="phone" pattern="phone" required="required" data-validate-length="8,20" class="form-control col-md-7 col-xs-12">
                             </div>
                           </div>
                           <p id="confirmation2" style="color:red; font-size: 15px"></p>
                         </form>
                         <script>
-                            // $('#wizard').smartWizard('disableStep',1);
+                            // $('form').submit(function(e){
+                            //     e.preventDefault();
+                            //     var submit = true;
+                            //
+                            //     // Validate the form using generic validaing
+                            //     if( !validator.checkAll( $(this) ) ){
+                            //         submit = false;
+                            //     }
+                            //
+                            //     if( submit )
+                            //         this.submit();
+                            //
+                            //     return false;
+                            // });
                         </script>
                       </div>
                     </div>
