@@ -96,30 +96,30 @@ function emailSignIn() {
 
 signInButton.addEventListener('click', emailSignIn,false);
 
-// <script>
-// $('#submitForm').on('submit', function () {
-//     var confirm = document.getElementById('confirmation');
-//     var email = document.getElementById('email').value;
-//     var password = document.getElementById('password').value;
-//     console.log('test');
-//     firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-//         // Handle Errors.
-//         var errorCode = error.code;
-//         var errorMessage = error.message;
-//         if(errorCode === 'auth/email-already-in-use'){
-//             confirm.innerHTML = ('This email is already in use.');
-//         }else if(errorCode === 'auth/invalid-email') {
-//             confirm.innerHTML = ('The email is invalid.');
-//         }else if(errorCode === 'auth/weak-password') {
-//             confirm.innerHTML = ('The password is too weak.');
-//         }else{
-//             alert(errorMessage);
-//         }
-//     });
-//     console.log("success");
-//     return false;
-// })
-// </script>
+<script>
+$('#submitForm').on('submit', function () {
+    var confirm = document.getElementById('confirmation');
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    console.log('test');
+    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+        // Handle Errors.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        if(errorCode === 'auth/email-already-in-use'){
+            confirm.innerHTML = ('This email is already in use.');
+        }else if(errorCode === 'auth/invalid-email') {
+            confirm.innerHTML = ('The email is invalid.');
+        }else if(errorCode === 'auth/weak-password') {
+            confirm.innerHTML = ('The password is too weak.');
+        }else{
+            alert(errorMessage);
+        }
+    });
+    console.log("success");
+    return false;
+})
+</script>
 // <script
 // src="https://code.jquery.com/jquery-3.3.1.min.js"
 // integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
