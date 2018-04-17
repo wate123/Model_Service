@@ -365,7 +365,10 @@
                                             <!--<button type="submit" class="btn btn-primary">Cancel</button>-->
                                             <button class="btn btn-primary" type="reset">Reset</button>
                                             <script>
-                                                $('#submitForm').on('submit', function () {
+                                                // $('#submitForm').on('submit', function () {
+                                                //
+                                                // })
+                                                function submitForm() {
                                                     var confirm = document.getElementById('confirmation');
                                                     var email = document.getElementById('email').value;
                                                     var password = document.getElementById('password').value;
@@ -386,9 +389,9 @@
                                                     });
                                                     console.log("success");
                                                     return false;
-                                                })
+                                                }
                                             </script>
-                                            <button id="send" type="submit"  class="btn btn-success">Submit</button>
+                                            <button id="send" type="button" onclick="submitForm()" class="btn btn-success">Submit</button>
 
                                         </div>
                                     </div>

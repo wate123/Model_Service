@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Model Management | </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="../vendors/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC4RrZ1ZAvMGLaDhGCB1TCfm4WzgdZT1cI",
+            authDomain: "csc-4330.firebaseapp.com",
+            databaseURL: "https://csc-4330.firebaseio.com",
+            projectId: "csc-4330",
+            storageBucket: "csc-4330.appspot.com",
+            messagingSenderId: "549352708672"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body class="login">
+<div>
+    <!--<a class="hiddenanchor" id="signup"></a>-->
+    <!--<a class="hiddenanchor" id="signin"></a>-->
+
+    <div class="login_wrapper">
+        <div class="animate form login_form">
+            <section class="login_content">
+                <form name="signinform"   method="post">
+                    <h1>Management Login</h1>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Email" id="email" name="loginEmail" />
+                    </div>
+                    <div>
+                        <input type="password" class="form-control" placeholder="Password" id="password0" name="loginpass" />
+                    </div>
+                    <div>
+                        <p id="sign_in_confirmation" style="color:red; font-size: 15px" ></p>
+                    </div>
+                    <script>
+                        // $('#submitForm').on('submit', function () {
+                        //
+                        // })
+                        function emailSignIn() {
+                            var email = document.getElementById("email").value;
+                            var password = document.getElementById("password0").value;
+                            var atpos = email.indexOf("@");
+                            var dotpos = email.lastIndexOf(".");
+                            if (email === ""){
+                                document.signinform.loginEmail.focus();
+                                signInConfirm.innerHTML = "Email cannot be empty.";
+                                return false;
+                            }else if (atpos < 1 || dotpos - atpos < 2){
+                                signInConfirm.innerHTML = "Please enter correct Email";
+                                document.signinform.loginEmail.focus();
+                                return false;
+                            }
+                            if(password === ""){
+                                document.signinform.loginpass.focus();
+                                signInConfirm.innerHTML = "Password cannot be empty.";
+                                return false;
+                            }
+                            firebase.auth().signInWithEmailAndPassword(email, password).then(function (user) {
+                                if(user){
+                                    //TODO change to your link
+                                    window.location.href = "";
+                                }
+                            }).catch(function(error) {
+                                // Handle Errors here.
+
+                                var errorCode = error.code;
+                                var errorMessage = error.message;
+                                if(errorCode === 'auth/user-not-found'){
+                                    signInConfirm.innerHTML = ('User not found.');
+                                }else if(errorCode === 'auth/invalid-email') {
+                                    signInConfirm.innerHTML = ('This Email is invalid.');
+                                }else if(errorCode === 'auth/wrong-password') {
+                                    signInConfirm.innerHTML = ('Wrong Password.');
+                                }
+                            });
+                            console.log("success");
+                        }
+                    </script>
+                    <div>
+                        <button id="login" type="button" onclick="emailSignIn()" class="btn btn-default submit" >Log in</button>
+                        <!--<a class="reset_pass" href="#">Lost your password?</a>-->
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="separator">
+                        <!--<p class="change_link">New to site?-->
+                        <!--<a href="#signup" class="to_register"> Create Account </a>-->
+                        <!--</p>-->
+
+                        <div class="clearfix"></div>
+                        <br />
+
+                        <div>
+                            <h1><i class="fa fa-paw"></i> Model Management</h1>
+                            <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <!--<div id="register" class="animate form registration_form">-->
+        <!--<section class="login_content">-->
+        <!--<form name="signupform"  method="post">-->
+        <!--<h1>Create Account</h1>-->
+        <!--<div>-->
+        <!--<input type="email" class="form-control" placeholder="Email" id="email" name="signupemail" required="" />-->
+        <!--</div>-->
+        <!--<div>-->
+        <!--<input type="password" class="form-control" placeholder="Password" id="password" name="signuppass" required="" />-->
+        <!--</div>-->
+        <!--&lt;!&ndash;<div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<p id="confirmation" style="color:red"></p>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--<div>-->
+        <!--<input type="password" class="form-control" id="password2" placeholder="Repeat Password" name="signuppass2">-->
+        <!--<p id="confirmation" style="color:red; font-size: 15px"></p>-->
+        <!--</div>-->
+        <!--<div>-->
+        <!--<a id="submit" type="button" class="btn btn-default submit" >Submit</a>-->
+        <!--</div>-->
+
+        <!--<div class="clearfix"></div>-->
+
+        <!--<div class="separator">-->
+        <!--<p class="change_link">Already a member ?-->
+        <!--<a href="#signin" class="to_register"> Log in </a>-->
+        <!--</p>-->
+
+        <!--<div class="clearfix"></div>-->
+        <!--<br />-->
+
+        <!--<div>-->
+        <!--<h1><i class="fa fa-paw"></i> Model Management</h1>-->
+        <!--<p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</form>-->
+        <!--</section>-->
+        <!--</div>-->
+    </div>
+</div>
+</body>
+</html>

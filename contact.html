@@ -268,6 +268,7 @@
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+
     <script src="admin/vendors/validator/validator.js"></script>
     <script>
         var db = firebase.firestore();
@@ -280,6 +281,7 @@
                 message: document.getElementById("message").value
             })
                 .then(function(docRef) {
+                    window.location.reload();
                     console.log("Document written with ID: ", docRef.id);
                 })
                 .catch(function(error) {
@@ -287,6 +289,5 @@
                 });
         })
 	</script>
-
 	</body>
 </html>

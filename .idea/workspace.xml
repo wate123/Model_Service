@@ -2,56 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6ab8d53-56a9-4b79-bb6d-f640533ea96d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/splash.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/splash.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/TechnicianForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/TechnicianForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/calendar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/chartjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/chartjs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/chartjs2.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/chartjs2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/e_commerce.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/e_commerce.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/echarts.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/echarts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/fixed_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/fixed_footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/fixed_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/fixed_sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/form_advanced.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/form_advanced.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/form_buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/form_buttons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/form_upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/form_upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/form_validation.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/form_validation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/production/form_wizards.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/form_wizards.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/general_elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/general_elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/glyphicons.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/glyphicons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/icons.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/icons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/inbox.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/production/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/index3.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/index3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/invoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/invoice.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/production/js/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/js/signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/level2.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/level2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/adminLogin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/media_gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/media_gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/morisjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/morisjs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/other_charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/other_charts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/production/plain_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/plain_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/pricing_tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/pricing_tables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/project_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/project_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/projects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/production/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/tables.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/production/tables_dynamic.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/tables_dynamic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/typography.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/widgets.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/widgets.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animated-sign-up-flow-master/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/animated-sign-up-flow-master/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features.html" beforeDir="false" afterPath="$PROJECT_DIR$/features.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/pricing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tour.html" beforeDir="false" afterPath="$PROJECT_DIR$/tour.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -65,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="form_wizards.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/production/form_wizards.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="137" column="52" lean-forward="true" selection-start-line="137" selection-start-column="52" selection-end-line="137" selection-end-column="52" />
+            <state relative-caret-position="510">
+              <caret line="34" column="13" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="34" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -77,8 +36,51 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/production/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="207" column="15" selection-start-line="207" selection-start-column="15" selection-end-line="207" selection-end-column="15" />
+            <state relative-caret-position="353">
+              <caret line="84" column="64" selection-start-line="84" selection-start-column="64" selection-end-line="84" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tables.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/production/tables.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="557" column="79" selection-start-line="557" selection-start-column="56" selection-end-line="557" selection-end-column="79" />
+              <folding>
+                <element signature="n#div#1;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#a#0;n#th#8;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#6;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tables_dynamic.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/production/tables_dynamic.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="27" selection-end-column="60" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#2;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plain_page.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/production/plain_page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="818" column="62" selection-start-line="818" selection-start-column="62" selection-end-line="818" selection-end-column="62" />
+              <folding>
+                <element signature="n#div#0;n#li#4;n#ul#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,8 +88,20 @@
       <file leaf-file-name="adminLogin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/production/adminLogin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+            <state relative-caret-position="240">
+              <caret line="52" column="20" lean-forward="true" selection-end-line="133" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="technicianLogin.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/production/technicianLogin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="81" column="62" lean-forward="true" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -98,37 +112,26 @@
       <file leaf-file-name="signup.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/production/js/signup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="405">
+              <caret line="72" column="9" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="72" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form_wizards.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/production/form_wizards.html">
+      <file leaf-file-name="TechnicianForm.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/production/TechnicianForm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="377" column="45" selection-start-line="377" selection-end-line="378" />
-              <folding>
-                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="697">
+              <caret line="392" column="53" lean-forward="true" selection-start-line="366" selection-start-column="44" selection-end-line="392" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.smartWizard.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js">
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4372">
-              <caret line="303" column="4" selection-start-line="303" selection-start-column="4" selection-end-line="303" selection-end-column="4" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="630">
+              <caret line="262" column="66" selection-start-line="262" selection-start-column="66" selection-end-line="262" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -145,12 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>login</find>
-      <find>login.html</find>
-      <find>settin</find>
-      <find>setting</find>
-      <find>message</find>
-      <find>images/</find>
       <find>John Doe</find>
       <find>profile</find>
       <find>different form elements</find>
@@ -174,7 +171,13 @@
       <find>onLeaveStep</find>
       <find>labelNext</find>
       <find>buttons</find>
+      <find>goForward</find>
       <find>log ou</find>
+      <find>submit</find>
+      <find>admin acc</find>
+      <find>form</find>
+      <find>forms</find>
+      <find>key</find>
     </findStrings>
     <replaceStrings>
       <replace>fn</replace>
@@ -195,13 +198,21 @@
         <option value="$PROJECT_DIR$/admin/production/js/database.js" />
         <option value="$PROJECT_DIR$/admin/production/profile.html" />
         <option value="$PROJECT_DIR$/admin/production/form.html" />
+        <option value="$PROJECT_DIR$/admin/production/login.html" />
         <option value="$PROJECT_DIR$/admin/production/TechnicianForm.html" />
         <option value="$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/contact.html" />
+        <option value="$PROJECT_DIR$/firestore-import-export/import-to-firestore.json" />
+        <option value="$PROJECT_DIR$/firestore-import-export/import.js" />
+        <option value="$PROJECT_DIR$/info.json" />
         <option value="$PROJECT_DIR$/admin/production/form_wizards.html" />
         <option value="$PROJECT_DIR$/admin/production/index.html" />
-        <option value="$PROJECT_DIR$/admin/production/login.html" />
+        <option value="$PROJECT_DIR$/admin/production/tables_dynamic.html" />
+        <option value="$PROJECT_DIR$/admin/production/tables.html" />
+        <option value="$PROJECT_DIR$/admin/production/plain_page.html" />
         <option value="$PROJECT_DIR$/admin/production/js/signup.js" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/admin/production/technicianLogin.html" />
       </list>
     </option>
   </component>
@@ -245,11 +256,10 @@
       <path value="$PROJECT_DIR$/functions/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="1280" />
-    <option name="y" value="25" />
-    <option name="width" value="1280" />
-    <option name="height" value="1415" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1919" />
+    <option name="width" value="1922" />
+    <option name="height" value="1081" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -257,7 +267,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,12 +277,26 @@
             <path>
               <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
               <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,10 +313,12 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/firestore-import-export/node_modules" />
       <recent name="$PROJECT_DIR$/admin/production/js" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/admin/production/js" />
     </key>
   </component>
@@ -309,26 +334,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
-    <configuration name="adminLogin.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/admin/production/adminLogin.html" />
-    <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/index.html" />
-    <configuration name="index.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/index.html" />
-    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/admin/production/index.html" />
-    <configuration name="smartwizard2-validation.htm" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/admin/vendors/jQuery-Smart-Wizard/smartwizard2-validation.htm" />
+  <component name="RunManager" selected="JavaScript Debug.technicianLogin.html">
+    <configuration name="adminLogin.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/adminLogin.html" />
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/index.html" />
+    <configuration name="plain_page.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/plain_page.html" />
+    <configuration name="tables.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/tables.html" />
+    <configuration name="technicianLogin.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/technicianLogin.html" />
     <list>
-      <item itemvalue="JavaScript Debug.index.html (3)" />
+      <item itemvalue="JavaScript Debug.tables.html" />
       <item itemvalue="JavaScript Debug.index.html" />
-      <item itemvalue="JavaScript Debug.index.html (1)" />
-      <item itemvalue="JavaScript Debug.smartwizard2-validation.htm" />
+      <item itemvalue="JavaScript Debug.plain_page.html" />
       <item itemvalue="JavaScript Debug.adminLogin.html" />
+      <item itemvalue="JavaScript Debug.technicianLogin.html" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="JavaScript Debug.technicianLogin.html" />
         <item itemvalue="JavaScript Debug.adminLogin.html" />
-        <item itemvalue="JavaScript Debug.smartwizard2-validation.htm" />
+        <item itemvalue="JavaScript Debug.plain_page.html" />
+        <item itemvalue="JavaScript Debug.tables.html" />
         <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="JavaScript Debug.index.html (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -348,43 +373,35 @@
       <workItem from="1523127213213" duration="709000" />
       <workItem from="1523409752146" duration="15702000" />
       <workItem from="1523583029906" duration="36429000" />
+      <workItem from="1523941177750" duration="194000" />
+      <workItem from="1523947857969" duration="8876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83573000" />
+    <option name="totallyTimeSpent" value="103070000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="25" width="1280" height="1415" extended-state="4" />
+    <frame x="1919" y="0" width="1922" height="1081" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24178404" />
-      <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="17" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32927758" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16447021" />
-      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="16" sideWeight="0.5002636" side_tool="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49973643" weight="0.3294979" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.49920928" weight="0.3211297" />
-      <window_info anchor="bottom" id="Event Log" order="16" sideWeight="0.5002636" side_tool="true" weight="0.3294979" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,20 +417,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2325">
-          <caret line="155" column="54" lean-forward="true" selection-start-line="155" selection-start-column="54" selection-end-line="155" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/signup.js" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1815">
@@ -421,13 +425,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/signup.js" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -457,13 +455,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/signup.js" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5580">
@@ -542,20 +534,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/form_validation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="51" selection-end-line="428" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json" />
     <entry file="file://$PROJECT_DIR$/admin/production/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -577,15 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/vendors/nprogress/nprogress.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -593,40 +563,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15284" column="17" selection-start-line="15284" selection-start-column="17" selection-end-line="15284" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/js/smartwizard2-validation.php" />
-    <entry file="file://$PROJECT_DIR$/admin/vendors/validator/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1530" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/vendors/validator/validator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4140">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/TechnicianForm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="367" column="52" selection-start-line="367" selection-start-column="52" selection-end-line="367" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/smartwizard2-validation.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -634,9 +571,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/nprogress/nprogress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="435" column="35" selection-start-line="435" selection-start-column="35" selection-end-line="435" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/validator/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/login.html" />
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="2709" column="4" selection-start-line="2709" selection-start-column="4" selection-end-line="2709" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/validator/validator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/form_validation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="51" selection-end-line="428" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/validator/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="214" column="54" lean-forward="true" selection-start-line="214" selection-start-column="8" selection-end-line="214" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4372">
+        <state relative-caret-position="569">
           <caret line="303" column="4" selection-start-line="303" selection-start-column="4" selection-end-line="303" selection-end-column="4" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -644,49 +637,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/firestore-import-export/CSC-4330-a5bf56b5df42.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firestore-import-export/import-to-firestore.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11385">
+          <caret line="759" column="28" lean-forward="true" selection-start-line="759" selection-start-column="28" selection-end-line="759" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firestore-import-export/import.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="84" column="64" selection-start-line="84" selection-start-column="64" selection-end-line="84" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/tables.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="557" column="79" selection-start-line="557" selection-start-column="56" selection-end-line="557" selection-end-column="79" />
+          <folding>
+            <element signature="n#div#1;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#a#0;n#th#8;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#6;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/tables_dynamic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="27" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/form_wizards.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="377" column="45" selection-start-line="377" selection-end-line="378" />
+        <state relative-caret-position="510">
+          <caret line="34" column="13" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="262" column="66" selection-start-line="262" selection-start-column="66" selection-end-line="262" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/plain_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="818" column="62" selection-start-line="818" selection-start-column="62" selection-end-line="818" selection-end-column="62" />
           <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#li#4;n#ul#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/adminLogin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+        <state relative-caret-position="240">
+          <caret line="52" column="20" lean-forward="true" selection-end-line="133" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/index.html">
+    <entry file="file://$PROJECT_DIR$/admin/production/TechnicianForm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="207" column="15" selection-start-line="207" selection-start-column="15" selection-end-line="207" selection-end-column="15" />
+        <state relative-caret-position="697">
+          <caret line="392" column="53" lean-forward="true" selection-start-line="366" selection-start-column="44" selection-end-line="392" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/js/signup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="405">
+          <caret line="72" column="9" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="72" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/admin/production/technicianLogin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="137" column="52" lean-forward="true" selection-start-line="137" selection-start-column="52" selection-end-line="137" selection-end-column="52" />
+        <state relative-caret-position="615">
+          <caret line="81" column="62" lean-forward="true" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
