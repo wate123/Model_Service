@@ -61,6 +61,21 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
+		<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyC4RrZ1ZAvMGLaDhGCB1TCfm4WzgdZT1cI",
+			authDomain: "csc-4330.firebaseapp.com",
+			databaseURL: "https://csc-4330.firebaseio.com",
+			projectId: "csc-4330",
+			storageBucket: "csc-4330.appspot.com",
+			messagingSenderId: "549352708672"
+		};
+		firebase.initializeApp(config);
+	</script>
 	</head>
 	<body>
 
@@ -117,7 +132,7 @@
 				<div class="col-md-12">
 					<div class="col-md-6 animate-box">
 					<h3>Submit Request</h3>
-					<form action="#">
+					<form id="request" action="#" method="post">
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label class="sr-only" for="name">Name</label>
@@ -147,10 +162,11 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<input type="submit" value="Submit" class="btn btn-primary">
+							<input type="submit" value="Submit"  class="btn btn-primary">
 						</div>
 
 					</form>
+
 				</div>
 				<div class="col-md-5 col-md-push-1 animate-box">
 
@@ -252,6 +268,25 @@
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+    <script src="admin/vendors/validator/validator.js"></script>
+    <script>
+        var db = firebase.firestore();
+        $('#request').submit(function (e) {
+            e.preventDefault();
+            db.collection("users").add({
+                first: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                subject: document.getElementById("subject").value,
+                message: document.getElementById("message").value
+            })
+                .then(function(docRef) {
+                    console.log("Document written with ID: ", docRef.id);
+                })
+                .catch(function(error) {
+                    console.error("Error adding document: ", error);
+                });
+        })
+	</script>
 
 	</body>
 </html>
