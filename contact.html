@@ -203,8 +203,8 @@
 						<h3>Links</h3>
 						<ul class="gtco-footer-links">
 							<li><a href="#">Knowledge Base</a></li>
-							<li><a href="admin/production/adminLogin.html">Admin Access</a></li>
-							<li><a href="admin/production/technicianLogin.html">Technician Access</a></li>
+							<li><a href="#">Admin Access</a></li>
+							<li><a href="#">Press</a></li>
 							<li><a href="#">Terms of services</a></li>
 							<li><a href="#">Privacy Policy</a></li>
 						</ul>
@@ -274,11 +274,15 @@
         var db = firebase.firestore();
         $('#request').submit(function (e) {
             e.preventDefault();
-            db.collection("users").add({
-                first: document.getElementById("name").value,
-                email: document.getElementById("email").value,
-                subject: document.getElementById("subject").value,
-                message: document.getElementById("message").value
+            var first = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+            db.collection("users").doc(email).set({
+                first: first,
+                email: email,
+                subject: subject,
+                message: message
             })
                 .then(function(docRef) {
                     window.location.reload();
