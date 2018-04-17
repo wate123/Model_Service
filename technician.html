@@ -97,52 +97,72 @@
                                 <div class="form-wrap">
                                     <div class="tab">
                                         <ul class="tab-menu">
-                                            <li class="active gtco-first"><a href="#" data-tab="bill">Generate Bill</a></li>
-                                            <li class="gtco-second"><a href="#" data-tab="queue">View Request</a></li>
+                                            <li class="active gtco-first"><a href="#" data-tab="queue">View Queue</a></li>
+                                            <li class="gtco-second"><a href="#" data-tab="bill">Generate Bill</a></li>
                                         </ul>
                                         <div class="tab-content">
                                             <div class="tab-content-inner active" data-content="queue">
                                                 <form name="signupform" action=""  method="">
-                                                    <div id="foo1"></div>
-                                                    <ol id="foo">
+                                                    <div id="foo"></div>
                                                         <script>
                                                             src="js/queue.js"
                                                         </script>
-                                                    </ol>
-                                                    <!--<div class="row form-group">-->
-                                                        <!--<div class="col-md-12">-->
-                                                            <!--<button class="btn btn-primary" type="button" id="take_request">Take Request</button>-->
-                                                        <!--</div>-->
-                                                    <!--</div>-->
+                                                    <div class="row form-group">
+                                                        <div class="col-md-12">
+                                                            <button onclick="takeJob()" class="btn btn-primary" type="submit" id="take_request">Take Request</button>
+                                                        </div>
+                                                    </div>
                                                 </form>
                                             </div>
 
-                                            <div class="tab-content-inner active" data-content="bill">
-                                                <form action="#">
+                                            <div class="tab-content-inner" data-content="bill">
+                                                <form action="#" >
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
-                                                            <label class="sr-only" for="name">Name</label>
+                                                            <label id="customerName" class="sr-only" for="name">Name</label>
+                                                            <script>
+                                                                //var name = document.getElementById("customerName").value;
+                                                                localStorage.setItem("name", document.getElementById("customerName").value);
+                                                            </script>
                                                             <input type="text" id="name" class="form-control" placeholder="Customer's name">
                                                         </div>
                                                     </div>
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
                                                             <label class="sr-only" for="hours">Hours Required</label>
-                                                            <input type="text" id="hours" class="form-control" placeholder="Number of hours required">
+                                                            <input type="number" id="hours" class="form-control" placeholder="Number of hours required">
                                                         </div>
                                                     </div>
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
 
-                                                            <select name="mydropdown">
+                                                            <select name="mydropdown" class="form-control">
                                                                 <option value="Beginner">Beginner</option>
                                                                 <option value="Intermediate">Intermediate</option>
                                                                 <option value="Expert">Expert</option>
                                                             </select>
                                                         </div>
+                                                        <p id="request_confirmation1"></p>
                                                     </div>
                                                     <div class="form-group">
-                                                        <input type="submit" value="Generate" class="btn btn-primary">
+                                                        <!--<form name="billForm" action="bill.html">-->
+                                                            <button  onclick="generateBill()" type="submit" value="Generate" class="btn btn-primary">Generate
+                                                                <script>
+                                                                    function generateBill(){
+                                                                        var name = document.getElementById("customerName").value;
+                                                                        var hours = document.getElementById("hours").value;
+                                                                        var requestConfirm = document.getElementById("request_confirmation1").value;
+
+                                                                        if (name === "")
+                                                                            requestConfirm.innerHTML = "Please enter your name.";
+                                                                        else if (hours === "")
+                                                                            requestConfirm.innerHTML = "Please enter the number of hours required.";
+                                                                        window.location.href= "bill.html"
+                                                                    }
+                                                                </script>
+                                                            </button>
+                                                        </form>
+                                                        <!--<input type="submit" value="Generate" class="btn btn-primary">-->
                                                     </div>
 
                                                 </form>
