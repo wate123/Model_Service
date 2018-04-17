@@ -222,12 +222,20 @@
 
 
 
-                        <td>
+                        <td id="date2">
 
-                            Created: April 24, 2018<br>
-
-                            Due: May 24, 2018
-
+                            <script>
+                                n = new Date();
+                                year = n.getFullYear();
+                                month = n.getMonth() + 1;
+                                dueMonth = n.getMonth() + 2;
+                                date = n.getDate()
+                                document.writeln("Created: " + month + "/" + date + "/" + year);
+                            </script>
+                            <br>
+                            <script>
+                                document.write("Due: " + dueMonth + "/" + date + "/" + year);
+                            </script>
                         </td>
 
                     </tr>
@@ -263,10 +271,9 @@
                         <td>
 
 
-                            John Doe
-                            <!--<script>-->
-                                <!--document.write(localStorage.getItem("stored"));-->
-                            <!--</script><br>-->
+                            <script>
+                                document.write(localStorage["name"]);
+                            </script>
 
 
                         </td>
@@ -278,48 +285,6 @@
             </td>
 
         </tr>
-
-
-
-        <!--<tr class="heading">-->
-
-            <!--<td>-->
-
-                <!--Payment Method-->
-
-            <!--</td>-->
-
-
-
-            <!--<td>-->
-
-                <!--Check #-->
-
-            <!--</td>-->
-
-        <!--</tr>-->
-
-
-
-        <!--<tr class="details">-->
-
-            <!--<td>-->
-
-                <!--Check-->
-
-            <!--</td>-->
-
-
-
-            <!--<td>-->
-
-                <!--1000-->
-
-            <!--</td>-->
-
-        <!--</tr>-->
-
-
 
         <tr class="heading">
 
@@ -344,9 +309,27 @@
         <tr class="item">
 
             <td>
+                <script>
+                    var technicianRate;
+                    document.write(localStorage["skill"] + " Technician ");
+                    if (localStorage["skill"] == "Beginner"){
+                        technicianRate = 30;
+                        document.write("($30/hour)");
+                    }else if (localStorage["skill"] == "Intermediate"){
+                        technicianRate = 50;
+                        document.write("($50/hour)");
+                    }
+                    else {
+                        technicianRate = 80;
+                        document.write("($80/hour)");
+                    }
+                </script>
 
-                Beginner Technician ($30/hour)<br>
-                for 8 hours
+                <br>
+                for
+                <script>
+                    document.write(localStorage["hours"] + " hours");
+                </script>
 
             </td>
 
@@ -355,7 +338,8 @@
             <td>
 
                 <script>
-                    var price = 30 * 8;
+                    var price = technicianRate * localStorage["hours"];
+
                     document.write("$" + price);
                 </script>
 
