@@ -2531,9 +2531,6 @@ if (typeof NProgress != 'undefined') {
 
 				$('#datatable').dataTable();
 
-				$('#datatable-keytable').DataTable({
-				  keys: true
-				});
 
 				$('#datatable-responsive').DataTable();
 

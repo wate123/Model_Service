@@ -342,7 +342,7 @@
                           KeyTable provides Excel like cell navigation on any table. Events (focus, blur, action etc) can be assigned to individual cells, columns, rows or all cells.
                         </p>
 
-                        <table id="datatable-keytable" class="table table-striped jambo_table bulk_action">
+                        <table id="datatable" class="table table-striped jambo_table bulk_action">
                           <!--<thead>-->
                           <!--<tr>-->
                             <!--<th>Name</th>-->
@@ -814,28 +814,7 @@
                           <!--</tr>-->
                           <!--</tbody>-->
                         </table>
-                        <script>
-                          var db = firebase.firestore();
-                          var dataset = db.collection("users").get().then(function(querySnapshot) {
-                              querySnapshot.forEach(function(doc) {
-                                  // doc.data() is never undefined for query doc snapshots
-                                  var info = [];
-                                  info.push(doc.data());
-                                  console.log(doc.id, " => ", doc.data());
-                              });
-                          });
-                            $(document).ready(function() {
-                                $('#datatable-keytable').DataTable( {
-                                    key: true,
-                                    data: dataset,
-                                    columns: [
-                                        { title: "Email" },
-                                        { title: "First" },
-                                        { title: "Message" }
-                                    ]
-                                } );
-                            } );
-                        </script>
+
                       </div>
                     </div>
                   </div>
@@ -884,5 +863,48 @@
 
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
+
+    <script>
+        var db = firebase.firestore();
+        var info = [];
+        db.collection("users").get().then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                // doc.data() is never undefined for query doc snapshots
+
+                info.push(doc.data());
+                $('#datatable').DataTable( {
+
+                    // key: true,
+                    data: info,
+                    columns: [
+                        { info: "email" },
+                        { info: "first" },
+                        { info: "message" },
+                        { info: "subject" }
+                    ]
+                } );
+                console.log("test");
+                console.log(doc.data());
+            });
+        });
+        // if ( $.fn.dataTable.isDataTable( '#datatable' ) ) {
+        //     table = $('#datatable').DataTable();
+        //
+        // }
+        // else {
+        //     table = $('#datatable').DataTable( {
+        //         key: true,
+        //         data: info,
+        //         columns: [
+        //             { title: "Email" },
+        //             { title: "First" },
+        //             { title: "Message" },
+        //             { title: "Subject" }
+        //         ]
+        //     } );
+        // }
+
+
+    </script>
   </body>
 </html>
