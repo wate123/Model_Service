@@ -816,16 +816,17 @@
                         </table>
                         <script>
                           var db = firebase.firestore();
-                          var dataset = db.collection("users")
-                              .onSnapshot(function(querySnapshot) {
+                          var dataset = db.collection("users").get().then(function(querySnapshot) {
+                              querySnapshot.forEach(function(doc) {
+                                  // doc.data() is never undefined for query doc snapshots
                                   var info = [];
-                                  querySnapshot.forEach(function(doc) {
-                                      info.push(doc.data().name);
-                                  });
-                                  console.log("Current cities in CA: ", cities.join(", "));
+                                  info.push(doc.data());
+                                  console.log(doc.id, " => ", doc.data());
                               });
+                          });
                             $(document).ready(function() {
                                 $('#datatable-keytable').DataTable( {
+                                    key: true,
                                     data: dataset,
                                     columns: [
                                         { title: "Email" },
