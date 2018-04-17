@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Assessment Tools</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+    <script src="../vendors/echarts/dist/echarts.min.js"></script>
+    <style>
+
+      .center{
+        text-align: center
+      }
+
+      .list{
+        font-size: 18px;
+        list-style: square;
+      }
+
+      .number{
+        text-align: center;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      .number:hover{
+        background-color: #545454;
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Assessment Tool</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>Admin</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+                         <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="index.html"><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index.html">Dashboard</a></li>
+                      <li><a href="index2.html">Dashboard2</a></li>
+                      <li><a href="index3.html">Dashboard3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="form_wizards.html"><i  class="fa fa-edit"></i> Technician </a>
+                  </li>
+          
+                  </li>
+                  <li><a href="tables.html"><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="tables.html">Tables</a></li>
+                      <li><a href="tables_dynamic.html">Table Dynamic</a></li>
+                    </ul>
+                  </li>
+                 
+                <li><a href="echarts.html"><i class="fa fa-bar-chart-o"></i> Assessment Tool</span></a>
+                    
+              
+                  
+                </div>
+
+            </div>
+                  
+                 
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="adminLogin.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">Admin
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Help</a></li>
+                    <li><a href="adminLogin.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Assessment Summary</h3>
+              </div>
+
+              <div class="title_right">
+                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Avg Wait Time</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="mainb" style="height:350px;"></div>
+                    <script>
+                      var echartBar = echarts.init(document.getElementById('mainb'));
+
+          echartBar.setOption({
+          title: {
+            text: 'Customer Wait Time',
+            subtext: '*wait time in seconds'
+          },
+          tooltip: {
+            trigger: 'axis'
+          },
+          legend: {
+            data: ['Wait Time']
+          },
+          toolbox: {
+            show: false
+          },
+          calculable: false,
+          xAxis: [{
+            type: 'category',
+            data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+          }],
+          yAxis: [{
+            type: 'value'
+          }],
+          series: [ {
+            name: 'Wait Time',
+            type: 'bar',
+            data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+            markPoint: {
+            data: [ {
+              name: 'purchases',
+              value: 2.3,
+              xAxis: 11,
+              yAxis: 3
+            }]
+            },
+            markLine: {
+            data: [{
+              type: 'average',
+              name: 'Average Waiting Time'
+            }]
+            }
+          }]
+          });
+        </script>
+         <div class="center">
+            <div class="list"> 
+              <p><strong>Average Wait Time:</strong> <i class="number">  48.07  </i>seconds</p>
+            </div>
+          </div>
+
+                   
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>% Time Spent in Queue</h2>
+                   
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="echart_pie" style="height:350px;"></div>
+                    <script> var echartPie = echarts.init(document.getElementById('echart_pie'));
+
+        echartPie.setOption({
+        tooltip: {
+          trigger: 'item',
+          formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+          x: 'center',
+          y: 'bottom',
+          data: ['Time in Queue', 'Time with Technician']
+        },
+        toolbox: {
+          show: true,
+          feature: {
+          magicType: {
+            show: true,
+            type: ['pie', 'funnel'],
+            option: {
+            funnel: {
+              x: '25%',
+              width: '50%',
+              funnelAlign: 'left',
+              max: 1548
+            }
+            }
+          },
+          restore: {
+            show: false,
+            title: "Restore"
+          },
+          saveAsImage: {
+            show: false,
+            title: "Save Image"
+          }
+          }
+        },
+        calculable: true,
+        series: [{
+          name: 'Pie Chart',
+          type: 'pie',
+          radius: '55%',
+          center: ['50%', '48%'],
+          data: [{
+          value: 48.07,
+          name: 'Time in Queue'
+          }, {
+          value: 253.2,
+          name: 'Time with Technician'
+          }]
+        }]
+        });
+
+        var dataStyle = {
+        normal: {
+          label: {
+          show: false
+          },
+          labelLine: {
+          show: false
+          }
+        }
+        };
+
+        var placeHolderStyle = {
+        normal: {
+          color: 'rgba(0,0,0,0)',
+          label: {
+          show: false
+          },
+          labelLine: {
+          show: false
+          }
+        },
+        emphasis: {
+          color: 'rgba(0,0,0,0)'
+        }
+        };</script>
+           <div class="center">
+            <div class="list"> 
+              <p><strong>Percent of Time in Queue:</strong> <i class="number">  15.96  </i>&percnt;</p>
+            </div>
+          </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Avg Queue Length</h2>
+                   
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="mainc" style="height:350px;"></div>
+                    <script >
+                      var echartBar = echarts.init(document.getElementById('mainc'));
+
+          echartBar.setOption({
+          title: {
+            text: 'Queue Length in Last 10 Days',
+          },
+          tooltip: {
+            trigger: 'axis'
+          },
+          legend: {
+            data: ['Wit Time']
+          },
+          toolbox: {
+            show: false
+          },
+          calculable: false,
+          xAxis: [{
+            type: 'category',
+            data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+          }],
+          yAxis: [{
+            type: 'value'
+          }],
+          series: [ {
+            name: 'Queue Length',
+            type: 'bar',
+            data: [10, 5, 9.0, 8, 12, 7, 4, 12, 6, 11],
+            markPoint: {
+            data: [ {
+              name: 'purchases',
+              value: 2.3,
+              xAxis: 11,
+              yAxis: 3
+            }]
+            },
+            markLine: {
+            data: [{
+              type: 'average',
+              name: 'Average Queue Length'
+            }]
+            }
+          }]
+          });</script>
+          <div class="center">
+            <div class="list"> 
+              <p><strong>Avg Queue Length:</strong> <i class="number">  8.4  </i></p>
+            </div>
+          </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2># of Jobs Not Addressed on Day They Were Requested</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="list">
+                    <ul>
+                      <li>Number of jobs requested today: <div class="number">23</div></li>
+                      <br>
+                      <li>Number of jobs addressed today: <div class="number">21</div></li>
+                      <br>
+                      <li>Number of jobs not handled on day they were requested: <div class="number">2</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+            
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Technician Idle Time <br><small>out of 8 hour day</small></h2>
+                   
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="echart_mini_pie" style="height:370px;"></div>
+                    <script>var echartMiniPie = echarts.init(document.getElementById('echart_mini_pie'));
+
+        echartMiniPie .setOption({
+        title: {
+          text: 'Idle Time',
+          sublink: 'http://e.weibo.com/1341556070/AhQXtjbqh',
+          x: 'center',
+          y: 'center',
+          itemGap: 20,
+          textStyle: {
+          color: 'rgb(42,63,84)',
+          fontFamily: '微软雅黑',
+          fontSize: 30,
+          fontWeight: 'bolder'
+          }
+        },
+        tooltip: {
+          show: true,
+          formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+          orient: 'vertical',
+          x: 170,
+          y: 45,
+          itemGap: 12,
+          data: ['5% Break', '78% Working', '17% Idle'],
+        },
+        toolbox: {
+          show: true,
+          feature: {
+          mark: {
+            show: true
+          },
+          dataView: {
+            show: false,
+            title: "Text View",
+            lang: [
+            "Text View",
+            "Close",
+            "Refresh",
+            ],
+            readOnly: false
+          },
+          restore: {
+            show: false,
+            title: "Restore"
+          },
+          saveAsImage: {
+            show: false,
+            title: "Save Image"
+          }
+          }
+        },
+        series: [{
+          name: '1',
+          type: 'pie',
+          clockWise: false,
+          radius: [105, 130],
+          itemStyle: dataStyle,
+          data: [{
+          value: 5,
+          name: '5% Break'
+          }, {
+          value: 32,
+          name: 'invisible',
+          itemStyle: placeHolderStyle
+          }]
+        }, {
+          name: '2',
+          type: 'pie',
+          clockWise: false,
+          radius: [80, 105],
+          itemStyle: dataStyle,
+          data: [{
+          value: 78,
+          name: '78% Working'
+          }, {
+          value: 71,
+          name: 'invisible',
+          itemStyle: placeHolderStyle
+          }]
+        }, {
+          name: '3',
+          type: 'pie',
+          clockWise: false,
+          radius: [25, 80],
+          itemStyle: dataStyle,
+          data: [{
+          value: 17,
+          name: '17% Idle'
+          }, {
+          value: 97,
+          name: 'invisible',
+          itemStyle: placeHolderStyle
+          }]
+        }]
+        });</script>
+        <div class="center">
+        <div class="list">
+        <p><strong>Idle Time:</strong> <i class="number">  1.2  </i>  Hours</p>
+        </div>
+
+                  </div>
+                </div>
+              </div>
+
+             
+        <!-- /page content -->
+
+        <!-- footer content -->
+        
+          <div class="clearfix"></div>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- ECharts -->
+    
+    <script src="../vendors/echarts/map/js/world.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <!--<script src="../build/js/custom.min.js"></script> -->
+	
+  </body>
+</html>
