@@ -206,15 +206,20 @@
                                                             <button  onclick="generateBill()" type="submit" value="Generate" class="btn btn-primary">Generate
                                                                 <script>
                                                                     function generateBill(){
-                                                                        var name = document.getElementById("customerName").value;
+                                                                        var name = document.getElementById("name").value;
+                                                                        var technicianSkill = document.getElementById("skill").value;
                                                                         var hours = document.getElementById("hours").value;
-                                                                        var requestConfirm = document.getElementById("request_confirmation1").value;
+                                                                        var requestConfirm = document.getElementById('request_confirmation1');
+                                                                        localStorage.setItem("hours", hours);
+                                                                        localStorage.setItem("name", name);
+                                                                        localStorage.setItem("skill", technicianSkill);
 
                                                                         if (name === "")
                                                                             requestConfirm.innerHTML = "Please enter your name.";
                                                                         else if (hours === "")
                                                                             requestConfirm.innerHTML = "Please enter the number of hours required.";
-                                                                        window.location.href= "bill.html"
+                                                                        else
+                                                                            window.location.href= "bill.html?data="+name;
                                                                     }
                                                                 </script>
                                                             </button>
