@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Model Management | </title>
+    <title>Model Technician | </title>
 
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -44,7 +44,7 @@
         <div class="animate form login_form">
             <section class="login_content">
                 <form name="signinform"   method="post">
-                    <h1>Management Login</h1>
+                    <h1>Technician Login</h1>
                     <div>
                         <input type="text" class="form-control" placeholder="Email" id="email" name="loginEmail" />
                     </div>
@@ -80,7 +80,7 @@
                             firebase.auth().signInWithEmailAndPassword(email, password).then(function (user) {
                                 if(user){
                                     //TODO change to your link
-                                    window.location.href = "";
+                                    window.location.href = "technician.html";
                                 }
                             }).catch(function(error) {
                                 // Handle Errors here.
