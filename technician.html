@@ -119,7 +119,7 @@
                                     <div class="tab">
                                         <ul class="tab-menu">
                                             <li class="active gtco-first"><a href="#" data-tab="queue">View Queue</a></li>
-                                            <li class="gtco-second"><a href="../../bill.html" data-tab="bill">Generate Bill</a></li>
+                                            <li class="gtco-second"><a href="#" data-tab="bill">Generate Bill</a></li>
                                         </ul>
                                         <div class="tab-content">
                                             <div class="tab-content-inner active" data-content="queue">
@@ -180,33 +180,29 @@
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
 
-                                                            <select id="skill" name="mydropdown" class="form-control">
+                                                            <select name="mydropdown" class="form-control">
                                                                 <option value="Beginner">Beginner</option>
                                                                 <option value="Intermediate">Intermediate</option>
                                                                 <option value="Expert">Expert</option>
                                                             </select>
-                                                        </div>  
+                                                        </div>
+                                                        <p id="request_confirmation1"></p>
                                                     </div>
                                                     <div class="form-group">
-                                                        <p id="request_confirmation1"></p>
-                                                            <button  onclick="generateBill()" type="button" value="Generate" class="btn btn-primary">Generate
+                                                        <!--<form name="billForm" action="bill.html">-->
+                                                            <button  onclick="generateBill()" type="submit" value="Generate" class="btn btn-primary">Generate
                                                                 <script>
                                                                     function generateBill(){
-                                                                    var name = document.getElementById("name").value;
-                                                                    var technicianSkill = document.getElementById("skill").value;
-                                                                    var hours = document.getElementById("hours").value;
-                                                                    var requestConfirm = document.getElementById('request_confirmation1');
-                                                                    localStorage.setItem("hours", hours);
-                                                                    localStorage.setItem("name", name);
-                                                                    localStorage.setItem("skill", technicianSkill);
+                                                                        var name = document.getElementById("customerName").value;
+                                                                        var hours = document.getElementById("hours").value;
+                                                                        var requestConfirm = document.getElementById("request_confirmation1").value;
 
-                                                                    if (name === "")
-                                                                        requestConfirm.innerHTML = "Please enter your name.";
-                                                                    else if (hours === "")
-                                                                        requestConfirm.innerHTML = "Please enter the number of hours required.";
-                                                                    else
-                                                                        window.location.href= "bill.html?data="+name;
-                                                                }
+                                                                        if (name === "")
+                                                                            requestConfirm.innerHTML = "Please enter your name.";
+                                                                        else if (hours === "")
+                                                                            requestConfirm.innerHTML = "Please enter the number of hours required.";
+                                                                        window.location.href= "bill.html"
+                                                                    }
                                                                 </script>
                                                             </button>
                                                         <!--<input type="submit" value="Generate" class="btn btn-primary">-->
@@ -324,7 +320,7 @@
     function counter(arr, email) {
         var count = 0;
         for (var i = 0; i <arr.length; i++) {
-            if(arr[i].email = email){
+            if(arr[i].email === email){
                 count++;
             }
         }
@@ -334,11 +330,22 @@
     db.collection("users").get().then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
             // doc.data() is never undefined for query doc snapshots
-            data.push(doc.data());
 
+            data.push(doc.data());
 
         });
         console.log(data);
+
+
+    });
+    var countData = [];
+    db.collection("users").get().then(function(querySnapshot) {
+        querySnapshot.forEach(function (doc) {
+            // doc.data() is never undefined for query doc snapshots
+
+            //countData.push(counter(data, doc.id));
+
+        });
 
         console.log(counter(data, "Jun@gmail.com"));
         $('#datatable-tech').DataTable( {
@@ -353,6 +360,8 @@
             ]
         } );
     });
+
+
     // db.collection("users").get().then(function(querySnapshot) {
     //     querySnapshot.forEach(function(doc) {
     //         // doc.data() is never undefined for query doc snapshots
