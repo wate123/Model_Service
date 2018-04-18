@@ -42,7 +42,7 @@
     <!-- Themify Icons-->
     <link rel="stylesheet" href="css/themify-icons.css">
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="admin/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -58,7 +58,6 @@
 
     <link href="admin/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
     <link href="admin/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
-    <link href="admin/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -124,38 +123,26 @@
                                         </ul>
                                         <div class="tab-content">
                                             <div class="tab-content-inner active" data-content="queue">
-                                                <form name="signupform" action=""  method="">
+                                                <form name="signupform" action=""  method="post">
                                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                                         <div class="x_panel">
                                                             <div class="x_title">
-                                                                <h2>KeyTable example <small>Users</small></h2>
-                                                                <ul class="nav navbar-right panel_toolbox">
-                                                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                                                    </li>
-                                                                    <li class="dropdown">
-                                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                                                        <ul class="dropdown-menu" role="menu">
-                                                                            <li><a href="#">Settings 1</a>
-                                                                            </li>
-                                                                            <li><a href="#">Settings 2</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                                                    </li>
-                                                                </ul>
                                                                 <div class="clearfix"></div>
                                                             </div>
                                                             <div class="x_content">
                                                                 <div class="row">
                                                                     <div class="col-sm-12">
                                                                         <div class="card-box table-responsive">
-                                                                            <p class="text-muted font-13 m-b-30">
-                                                                                KeyTable provides Excel like cell navigation on any table. Events (focus, blur, action etc) can be assigned to individual cells, columns, rows or all cells.
-                                                                            </p>
 
-                                                                            <table id="datatable-tech" class="table table-striped table-bordered">
-
+                                                                            <table id="datatable-tech" class="table table-striped jambo_table bulk_action table-bordered ">
+                                                                                <thead>
+                                                                                <tr>
+                                                                                <th>Email</th>
+                                                                                <th>First Name</th>
+                                                                                <th>Message</th>
+                                                                                <th>Subject</th>
+                                                                                </tr>
+                                                                                </thead>
                                                                             </table>
 
                                                                         </div>
@@ -218,7 +205,6 @@
                                                                     }
                                                                 </script>
                                                             </button>
-                                                        </form>
                                                         <!--<input type="submit" value="Generate" class="btn btn-primary">-->
                                                     </div>
 
@@ -235,6 +221,7 @@
                     </div>
                 </div>
             </div>
+
         </header>
 
         <footer id="gtco-footer" role="contentinfo">
@@ -322,33 +309,55 @@
 <script src="js/queue.js"></script>
 <script src="admin/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="admin/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-<script src="admin/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-<script src="admin/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+<!--<script src="admin/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>-->
+<!--<script src="admin/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>-->
 <script src="admin/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-<script src="admin/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+<!--<script src="admin/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>-->
 <script src="admin/build/js/custom.min.js"></script>
 
 <script>
     var db = firebase.firestore();
-
+    function counter(arr, email) {
+        var count = 0;
+        for (var i = 0; i <arr.length; i++) {
+            if(arr[i].email = email){
+                count++;
+            }
+        }
+        return count;
+    }
+    var data = [];
     db.collection("users").get().then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
             // doc.data() is never undefined for query doc snapshots
-            var data = [];
             data.push(doc.data());
-            console.log(data);
+
+
         });
+        console.log(data);
+
+        console.log(counter(data, "Jun@gmail.com"));
+        $('#datatable-tech').DataTable( {
+            key: true,
+
+            data: data,
+            columns: [
+                { data: "email" },
+                { data: "first" },
+                { data: "message" },
+                { data: "subject" }
+            ]
+        } );
     });
-    $('#datatable-tech').DataTable( {
-        // key: true,
-        data: data,
-        columns: [
-            { data: "email" },
-            { data: "first" },
-            { data: "message" },
-            { data: "subject" }
-        ]
-    } );
+    // db.collection("users").get().then(function(querySnapshot) {
+    //     querySnapshot.forEach(function(doc) {
+    //         // doc.data() is never undefined for query doc snapshots
+    //         data = doc.data();
+    //         console.log(doc.id, " => ", doc.data());
+    //     });
+    // });
+
+
 </script>
 
 
