@@ -20,6 +20,9 @@
     <link href="../build/css/custom.min.css" rel="stylesheet">
     <!-- jQuery -->
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- jQuery Smart Wizard -->
+    <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script>
         // Initialize Firebase
@@ -188,82 +191,105 @@
                         <h2 class="StepTitle" align="center" style="font-size: large">Create Technician Account</h2>
                         <br>
                         <br>
+
                         <form id="account" class="form-horizontal form-label-left" style="height: 300px" method="post" novalidate>
                           <div class="item form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Email <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12">
-                            </div>
-                          </div>
-                          <div class="item form-group">
-                            <label for="password" class="control-label col-md-3">Password*</label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input id="password" type="password" name="password" data-validate-length="6,8" class="form-control col-md-7 col-xs-12" required="required">
-                            </div>
-                          </div>
-                          <div class="item form-group">
-                            <label for="password2" class="control-label col-md-3 col-sm-3 col-xs-12">Repeat Password*</label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input id="password2" type="password" name="password2"  data-validate-linked="password" class="form-control col-md-7 col-xs-12" required="required">
+                              <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12" >
                             </div>
                           </div>
                           <div class="col-md-6 col-md-offset-3">
-                            <button class="btn btn-primary" type="reset">Reset</button>
-
-                            <button id="send" type="button"  onsubmit="afterSubmit()"  class="btn btn-success">Submit</button>
-                            <script>
-                                function emailSignup(){
-                                    var confirm = document.getElementById('confirmation');
-                                    var email = document.getElementById('email').value;
-                                    var password = document.getElementById('password').value;
-                                    var repassword = document.getElementById('password2').value;
-                                    var isValid;
-
-                                    if (password === repassword) {
-                                        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-                                            // Handle Errors.
-                                            var errorCode = error.code;
-                                            var errorMessage = error.message;
-                                            if(errorCode === 'auth/email-already-in-use'){
-                                                confirm.innerHTML = ('This email is already in use.');
-                                            }else if(errorCode === 'auth/invalid-email') {
-                                                confirm.innerHTML = ('The email is invalid.');
-                                            }else if(errorCode === 'auth/weak-password') {
-                                                confirm.innerHTML = ('The password is too weak.');
-                                            }else{
-                                                alert(errorMessage);
-                                            }
-                                            isValid = false;
-                                        });
-                                        isValid = true;
-                                        return isValid;
-                                    }else {
-                                        confirm.innerHTML = "Password Mismatch";
-                                    }
-                                }
-                                function afterSubmit() {
-                                    if (emailSignup()){
-                                        window.setTimeout($("#wizard").smartWizard('goForward'), 10000);
-
-
-                                    }
-                                }
-
-                            </script>
                             <p id="confirmation" style="color:red; font-size: 15px"></p>
+
                           </div>
+                          <div class="col-md-6 col-md-offset-3">
+                            <button id="check" type="button"  class="btn btn-success">Check</button>
+                          </div>
+                          <br>
+                          <div  id="after" >
+                            <div id="passdiv" class="item form-group">
+
+                              <label for="password" class="control-label col-md-3">Password*</label>
+                              <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input id="password" type="password" name="password" data-validate-length="6,8" class="form-control col-md-7 col-xs-12" required="required">
+                              </div>
+                            </div>
+                            <div id="pass2div" class="item form-group">
+                              <label for="password2" class="control-label col-md-3 col-sm-3 col-xs-12">Repeat Password*</label>
+                              <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input id="password2" type="password" name="password2"  data-validate-linked="password" class="form-control col-md-7 col-xs-12" required="required">
+                              </div>
+                            </div>
+
+                            <div class="col-md-6 col-md-offset-3">
+                              <p id="rest_confirmation" style="color:red; font-size: 15px"></p>
+
+                            </div>
+                            <div class="col-md-6 col-md-offset-3">
+                              <button id="reset"  class="btn btn-primary" type="reset">Reset</button>
+                              <script>
+                                  $('#reset').click(function()  {
+                                      location.reload();
+                                  });
+                              </script>
+                            </div>
+                          </div>
+
+
+
 
                         </form>
 
+                        <script>
+                            $("#after").hide();
+                            // $("#pass2div").hide();
+                            // $("#reset").hide();
 
+                            document.getElementById('check').addEventListener('click',checkEmail, false);
+                                function checkEmail() {
+                                    var email = $('#email').val();
+                                    if(email && email.length > 0){
+                                        if(!isValidEmailAddress(email)){
+                                            $('#confirmation').html('Email is invalid').show();
+                                        }else{
+                                            firebase.auth().fetchProvidersForEmail(email)
+                                                .then((providers) => {
+                                                    // return providers.length > 0;
+                                                    console.log(providers.length);
+                                                    if(providers.length == 0){
+                                                        $('#confirmation').html('').hide();
+                                                        $("#check").hide();
+                                                        $("#after").show();
+                                                        // $("#passdiv").show();
+                                                        // $("#pass2div").show();
+                                                        // $("#reset").show();
+                                                    }else if(providers.length > 0){
+                                                        $('#confirmation').html('Email already exist').show();
+                                                    }
+                                                });
+
+                                        }
+                                    }else{
+                                        $('#confirmation').html('Please enter email').show();
+                                    }
+                                }
+                            // Email Validation
+                            function isValidEmailAddress(emailAddress) {
+                                var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+                                return pattern.test(emailAddress);
+                            }
+
+
+                        </script>
 
                       </div>
                       <div id="step-2">
                         <h2 class="StepTitle" align="center" style="font-size: large">Personal Information</h2>
                         <br>
                         <br>
-                        <form class="form-horizontal form-label-left"  style="height: 300px" method="post" novalidate>
+                        <form id="info"  class="form-horizontal form-label-left"  style="height: 300px" method="post" novalidate>
                           <div class="item form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
                             </label>
@@ -282,7 +308,7 @@
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="age">Age <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input type="number" id="age" name="age" pattern="numeric" required="required" data-validate-minmax="13,100" class="form-control col-md-7 col-xs-12">
+                              <input type="number" id="age" name="number" required="required" data-validate-minmax="13,100" class="form-control col-md-7 col-xs-12">
                             </div>
                           </div>
                           <div class="item form-group">
@@ -292,23 +318,198 @@
                               <input type="tel" id="telephone" name="phone" pattern="phone" required="required" data-validate-length="8,20" class="form-control col-md-7 col-xs-12">
                             </div>
                           </div>
-                          <p id="confirmation2" style="color:red; font-size: 15px"></p>
+                          <div class="item form-group">
+                            <label for="date" class="control-label col-md-3">Date*</label>
+                            <div  class="col-md-6 col-sm-6 col-lg-2">
+                              <label type="tel" id="date"   class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-md-offset-3">
+                            <p id="confirmation2" style="color:red; font-size: 15px"></p>
+                            <div type="submit"></div>
+                          </div>
                         </form>
                         <script>
-                            // $('form').submit(function(e){
-                            //     e.preventDefault();
-                            //     var submit = true;
-                            //
-                            //     // Validate the form using generic validaing
-                            //     if( !validator.checkAll( $(this) ) ){
-                            //         submit = false;
-                            //     }
-                            //
-                            //     if( submit )
-                            //         this.submit();
-                            //
-                            //     return false;
-                            // });
+                            var date = new Date();
+                            var today = date.toLocaleDateString();
+                            document.getElementById('date').innerHTML = today;
+
+                            $(document).ready(function(){
+                                // Smart Wizard
+                                $('#wizard').smartWizard({
+                                    onLeaveStep:leaveAStepCallback,
+                                    onFinish:onFinishCallback
+                                });
+
+                                function leaveAStepCallback(obj, context){
+                                    console.log("Leaving step " + context.fromStep + " to go to step " + context.toStep);
+                                    return validateSteps(context.fromStep); // return false to stay on step and true to continue navigation
+                                }
+
+                                function onFinishCallback(){
+                                    if(validateAllSteps()){
+
+                                        $('#info').submit();
+                                    }
+                                }
+
+
+                                function isTelephone(str) {
+                                    var a = /^(1\s|1|)?((\(\d{3}\))|\d{3})(\-|\s)?(\d{3})(\-|\s)?(\d{4})$/.test(str);
+                                }
+
+                                function validateStep1() {
+                                    var isValid = true;
+                                    //validate email
+                                    var email = $('#email').val();
+                                    if(email && email.length > 0){
+                                        if(!isValidEmailAddress(email)){
+                                            isValid = false;
+                                            $('#rest_confirmation').html('Email is invalid').show();
+                                        }else{
+                                            //$('#rest_confirmation').html('').hide();
+
+                                        }
+                                    }else{
+                                        isValid = false;
+                                        $('#rest_confirmation').html('Please enter email').show();
+                                    }
+
+                                    // validate password
+                                    var pw = $('#password').val();
+                                    var cpw = $('#password2').val();
+                                    if(!pw || pw.length <= 0){
+                                        isValid = false;
+                                        $('#rest_confirmation').html('Please fill password').show();
+                                    }else{
+                                        // validate confirm password
+
+                                        if(!cpw && cpw.length <= 0){
+                                            isValid = false;
+                                            $('#rest_confirmation').html('Please fill confirm password').show();
+                                        }else{
+                                            //$('#rest_confirmation').html('').hide();
+                                        }
+
+                                        //$('#rest_confirmation').html('').hide();
+                                    }
+
+
+                                    // validate password match
+                                    if(pw && pw.length > 0 && cpw && cpw.length > 0){
+                                        if(pw !== cpw){
+                                            isValid = false;
+                                            $('#rest_confirmation').html('Password mismatch').show();
+                                        }
+                                    }
+                                    firebase.auth().createUserWithEmailAndPassword(email, cpw);
+                                    return isValid;
+                                }
+
+                                function validateStep2() {
+                                    var isValid = true;
+                                    //validate First name
+                                    var fn = $('#first-name').val();
+                                    if(!fn && fn.length <= 0){
+                                        isValid = false;
+                                        $('#confirmation2').html('Please fill First Name').show();
+                                    }else{
+                                        //$('#confirmation2').html('').hide();
+                                        //validate Last name
+                                        var ln = $('#last-name').val();
+                                        if(!ln && ln.length <= 0){
+                                            isValid = false;
+                                            $('#confirmation2').html('Please fill Last Name').show();
+                                        }else{
+                                            //$('#confirmation2').html('').hide();
+                                        }
+                                    }
+
+
+
+                                    //validate Age
+                                    var n = $('#age').val();
+                                    console.log(n);
+                                    if(!n){
+                                        isValid = false;
+                                        $('#confirmation2').html('Please fill age').show();
+                                    }else if (isNaN(n) || parseInt(n,10) != n) {
+                                        isValid = false;
+                                        $('#confirmation2').html('Please enter integer').show();
+                                    }else{
+                                        //$('#confirmation2').html('').hide();
+                                    }
+                                    //validate phone
+                                    var phone = $('#telephone').val();
+                                    console.log(phone);
+                                    if(phone && phone.length > 0){
+                                        if(isTelephone(phone)){
+                                            isValid = false;
+                                            $('#confirmation2').html('Phone number is invalid').show();
+                                        }else{
+                                            //$('#confirmation2').html('').hide();
+                                        }
+                                    }else{
+                                        isValid = false;
+                                        $('#confirmation2').html('Please enter Phone Number').show();
+                                    }
+
+                                    if(!fn == !ln == false && !n && phone.length == 0){
+                                        $('#confirmation2').html('Please fill All Field').show();
+                                    }
+                                    return isValid;
+                                }
+                                // Your Step validation logic
+                                function validateSteps(stepnumber){
+                                    var isStepValid = true;
+                                    // validate step 1
+                                    if(stepnumber === 1){
+                                        if (validateStep1() === false){
+                                            isStepValid = false;
+                                            $('#wizard').smartWizard('showMessage','Please correct the errors in step'+stepnumber+ ' and click next.');
+                                            $('#wizard').smartWizard('setError',{stepnum:stepnumber,iserror:true});
+                                        }else{
+
+                                                $('#wizard').smartWizard('hideMessage');
+                                                $('#wizard').smartWizard('setError',{stepnum:stepnumber,iserror:false});
+                                        }
+                                    }
+                                    if (stepnumber === 2){
+                                        if (validateStep2() === false){
+                                            isStepValid = false;
+                                            $('#wizard').smartWizard('showMessage','Please correct the errors in step'+stepnumber+ ' and click next.');
+                                            $('#wizard').smartWizard('setError',{stepnum:stepnumber,iserror:true});
+                                        }else{
+                                            $('#wizard').smartWizard('hideMessage');
+                                            $('#wizard').smartWizard('setError',{stepnum:stepnumber,iserror:false});
+                                        }
+                                    }
+                                    return isStepValid;
+                                }
+
+
+                                function validateAllSteps(){
+                                    var isStepValid = true;
+                                    if(validateStep1() == false){
+                                        isStepValid = false;
+                                        $('#wizard').smartWizard('setError',{stepnum:1,iserror:true});
+                                    }else{
+                                        $('#wizard').smartWizard('setError',{stepnum:1,iserror:false});
+                                    }
+
+                                    if(validateStep2() == false){
+                                        isStepValid = false;
+                                        $('#wizard').smartWizard('setError',{stepnum:2,iserror:true});
+                                    }else{
+                                        $('#wizard').smartWizard('setError',{stepnum:2,iserror:false});
+                                    }
+
+                                    if(!isStepValid){
+                                        $('#wizard').smartWizard('showMessage','Please correct the errors in the steps and continue');
+                                    }                return isStepValid;
+                                }
+
+                            });
                         </script>
                       </div>
                     </div>
@@ -339,192 +540,13 @@
     <!--<script src="../vendors/fastclick/lib/fastclick.js"></script>-->
     <!-- NProgress -->
     <script src="../vendors/nprogress/nprogress.js"></script>
-    <!-- jQuery Smart Wizard -->
-    <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
     <!-- validator -->
     <script src="../vendors/validator/validator.js"></script>
+  <script>
+  </script>
 
-    <!--&lt;!&ndash;<script >&ndash;&gt;-->
-        <!--// $(document).ready(function(){-->
-        <!--//     // Smart Wizard-->
-        <!--//-->
-        <!--//     $('#wizard').smartWizard({-->
-        <!--//         onLeaveStep:leaveAStepCallback,-->
-        <!--//         onFinish:onFinishCallback(),-->
-        <!--//         enableFinishButton:true,-->
-        <!--//     });-->
-
-            <!--// function leaveAStepCallback(obj){-->
-            <!--//     console.log('check1');-->
-            <!--//     var step_num= obj.attr('rel');-->
-            <!--//     return validateSteps(step_num);-->
-            <!--// }-->
-            <!--//-->
-            <!--// function onFinishCallback(){-->
-            <!--//-->
-            <!--//     if(validateAllSteps()){-->
-            <!--//         console.log('check');-->
-            <!--//         $('form').submit();-->
-            <!--//     }-->
-            <!--// }-->
-            <!--//-->
-            <!--// // Email Validation-->
-            <!--// function isValidEmailAddress(emailAddress) {-->
-            <!--//     var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);-->
-            <!--//     return pattern.test(emailAddress);-->
-            <!--// }-->
-            <!--// function isTelephone(str) {-->
-            <!--//     var a = /^(1\s|1|)?((\(\d{3}\))|\d{3})(\-|\s)?(\d{3})(\-|\s)?(\d{4})$/.test(str);-->
-            <!--//     alert(a);-->
-            <!--// }-->
-            <!--//-->
-            <!--// function validateStep1() {-->
-            <!--//     var isValid = true;-->
-            <!--//     //validate email-->
-            <!--//     var email = $('#email').val();-->
-            <!--//     if(email && email.length > 0){-->
-            <!--//         if(!isValidEmailAddress(email)){-->
-            <!--//             isValid = false;-->
-            <!--//             $('#confirmation').html('Email is invalid').show();-->
-            <!--//         }else{-->
-            <!--//             $('#confirmation').html('').hide();-->
-            <!--//         }-->
-            <!--//     }else{-->
-            <!--//         isValid = false;-->
-            <!--//         $('#confirmation').html('Please enter email').show();-->
-            <!--//     }-->
-            <!--//-->
-            <!--//     // validate password-->
-            <!--//     var pw = $('#password').val();-->
-            <!--//     if(!pw && pw.length <= 0){-->
-            <!--//         isValid = false;-->
-            <!--//         $('#msg_cpassword').html('Please fill password').show();-->
-            <!--//     }else{-->
-            <!--//         $('#msg_cpassword').html('').hide();-->
-            <!--//     }-->
-            <!--//-->
-            <!--//     // validate confirm password-->
-            <!--//     var cpw = $('#password2').val();-->
-            <!--//     if(!cpw && cpw.length <= 0){-->
-            <!--//         isValid = false;-->
-            <!--//         $('#msg_cpassword').html('Please fill confirm password').show();-->
-            <!--//     }else{-->
-            <!--//         $('#msg_cpassword').html('').hide();-->
-            <!--//     }-->
-            <!--//-->
-            <!--//     // validate password match-->
-            <!--//     if(pw && pw.length > 0 && cpw && cpw.length > 0){-->
-            <!--//         if(pw != cpw){-->
-            <!--//             isValid = false;-->
-            <!--//             $('#msg_cpassword').html('Password mismatch').show();-->
-            <!--//         }else{-->
-            <!--//             $('#msg_cpassword').html('').hide();-->
-            <!--//         }-->
-            <!--//     }-->
-            <!--//     return isValid;-->
-            <!--// }-->
-            <!--//-->
-            <!--// function validateStep2() {-->
-            <!--//     var isValid = true;-->
-            <!--//     //validate First name-->
-            <!--//     var fn = $('#first-name').val();-->
-            <!--//     if(!fn && fn.length <= 0){-->
-            <!--//         isValid = false;-->
-            <!--//         $('#confirmation2').html('Please fill First Name').show();-->
-            <!--//     }else{-->
-            <!--//         $('#confirmation2').html('').hide();-->
-            <!--//     }-->
-            <!--//-->
-            <!--//     //validate Last name-->
-            <!--//     var ln = $('#last-name').val();-->
-            <!--//     if(!ln && ln.length <= 0){-->
-            <!--//         isValid = false;-->
-            <!--//         $('#confirmation2').html('Please fill Last Name').show();-->
-            <!--//     }else{-->
-            <!--//         $('#confirmation2').html('').hide();-->
-            <!--//     }-->
-            <!--//-->
-            <!--//     //validate Age-->
-            <!--//     var n = $('#number').val();-->
-            <!--//     if(!n){-->
-            <!--//         isValid = false;-->
-            <!--//         $('#confirmation2').html('Please fill age').show();-->
-            <!--//     }else if (isNaN(n) || parseInt(n,10) !== n) {-->
-            <!--//         isValid = false;-->
-            <!--//         $('#confirmation2').html('Please enter integer').show();-->
-            <!--//     }else{-->
-            <!--//         $('#confirmation2').html('').hide();-->
-            <!--//     }-->
-            <!--//     //validate email  email-->
-            <!--//     var phone = $('#telephone').val();-->
-            <!--//     if(phone && phone.length > 0){-->
-            <!--//         if(!isValidEmailAddress(phone)){-->
-            <!--//             isValid = false;-->
-            <!--//             $('#confirmation2').html('Phone number is invalid').show();-->
-            <!--//         }else{-->
-            <!--//             $('#confirmation2').html('').hide();-->
-            <!--//         }-->
-            <!--//     }else{-->
-            <!--//         isValid = false;-->
-            <!--//         $('#confirmation2').html('Please enter Phone Number').show();-->
-            <!--//     }-->
-            <!--//     return isValid;-->
-            <!--// }-->
-            <!--//-->
-            <!--//-->
-            <!--// // Your Step validation logic-->
-            <!--// function validateSteps(stepnumber){-->
-            <!--//     var isStepValid = true;-->
-            <!--//     // validate step 1-->
-            <!--//     if(stepnumber === 1){-->
-            <!--//         if (validateStep1() === false){-->
-            <!--//           isStepValid = false;-->
-            <!--//           $('#wizard').smartWizard('showMessage','Please correct the errors in step'+step+ ' and click next.');-->
-            <!--//           $('#wizard').smartWizard('setError',{stepnum:step,iserror:true});-->
-            <!--//         }else{-->
-            <!--//             $('#wizard').smartWizard('hideMessage');-->
-            <!--//             $('#wizard').smartWizard('setError',{stepnum:step,iserror:false});-->
-            <!--//         }-->
-            <!--//     }-->
-            <!--//     if (stepnumber === 2){-->
-            <!--//         if (validateStep2() === false){-->
-            <!--//             isStepValid = false;-->
-            <!--//             $('#wizard').smartWizard('showMessage','Please correct the errors in step'+step+ ' and click next.');-->
-            <!--//             $('#wizard').smartWizard('setError',{stepnum:step,iserror:true});-->
-            <!--//         }else{-->
-            <!--//             $('#wizard').smartWizard('hideMessage');-->
-            <!--//             $('#wizard').smartWizard('setError',{stepnum:step,iserror:false});-->
-            <!--//         }-->
-            <!--//     }-->
-            <!--//      return isStepValid;-->
-            <!--// }-->
-            <!--//-->
-            <!--//-->
-            <!--// function validateAllSteps(){-->
-            <!--//     var isStepValid = true;-->
-            <!--//     if(validateStep1() == false){-->
-            <!--//         isStepValid = false;-->
-            <!--//         $('#wizard').smartWizard('setError',{stepnum:1,iserror:true});-->
-            <!--//     }else{-->
-            <!--//         $('#wizard').smartWizard('setError',{stepnum:1,iserror:false});-->
-            <!--//     }-->
-            <!--//-->
-            <!--//     if(validateStep2() == false){-->
-            <!--//         isStepValid = false;-->
-            <!--//         $('#wizard').smartWizard('setError',{stepnum:2,iserror:true});-->
-            <!--//     }else{-->
-            <!--//         $('#wizard').smartWizard('setError',{stepnum:2,iserror:false});-->
-            <!--//     }-->
-            <!--//-->
-            <!--//     if(!isStepValid){-->
-            <!--//         $('#wizard').smartWizard('showMessage','Please correct the errors in the steps and continue');-->
-            <!--//     }                return isStepValid;-->
-            <!--// }-->
-
-        <!--// });-->
-    <!--&lt;!&ndash;</script>&ndash;&gt;-->
-	
   </body>
 </html>
