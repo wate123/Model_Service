@@ -866,44 +866,29 @@
 
     <script>
         var db = firebase.firestore();
-        var info = [];
+        var data = [];
         db.collection("users").get().then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
                 // doc.data() is never undefined for query doc snapshots
-
-                info.push(doc.data());
-                $('#datatable').DataTable( {
-
-                    // key: true,
-                    data: info,
-                    columns: [
-                        { info: "email" },
-                        { info: "first" },
-                        { info: "message" },
-                        { info: "subject" }
-                    ]
-                } );
-                console.log("test");
                 console.log(doc.data());
+                data.push(doc.data());
             });
-        });
-        // if ( $.fn.dataTable.isDataTable( '#datatable' ) ) {
-        //     table = $('#datatable').DataTable();
-        //
-        // }
-        // else {
-        //     table = $('#datatable').DataTable( {
-        //         key: true,
-        //         data: info,
-        //         columns: [
-        //             { title: "Email" },
-        //             { title: "First" },
-        //             { title: "Message" },
-        //             { title: "Subject" }
-        //         ]
-        //     } );
-        // }
+            console.log(data);
+            $('#datatable').DataTable( {
+                key: true,
+                "order":[[4, 'desc']],
+                data: data,
+                columns: [
+                    { data: "email" },
+                    { data: "first" },
+                    { data: "message" },
+                    { data: "subject" },
+                    { data: "count"}
+                ]
+            } );
 
+
+        });
 
     </script>
   </body>

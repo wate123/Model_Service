@@ -80,7 +80,16 @@
         };
         firebase.initializeApp(config);
     </script>
-
+    <style>
+        .form-control{
+            height: auto !important;
+            font-size: unset !important;
+        }
+        @media (min-width: 768px)
+            .col-sm-6 {
+            width: 45% !important;
+        }
+    </style>
 
 </head>
 <body>
@@ -141,6 +150,7 @@
                                                                                 <th>First Name</th>
                                                                                 <th>Message</th>
                                                                                 <th>Subject</th>
+                                                                                    <th># of Request</th>
                                                                                 </tr>
                                                                                 </thead>
                                                                             </table>
@@ -308,7 +318,7 @@
 <!-- Queue -->
 <script src="js/queue.js"></script>
 <script src="admin/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="admin/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!--<script src="admin/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>-->
 <!--<script src="admin/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>-->
 <!--<script src="admin/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>-->
 <script src="admin/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
@@ -317,49 +327,39 @@
 
 <script>
     var db = firebase.firestore();
-    function counter(arr, email) {
-        var count = 0;
-        for (var i = 0; i <arr.length; i++) {
-            if(arr[i].email === email){
-                count++;
-            }
-        }
-        return count;
-    }
     var data = [];
     db.collection("users").get().then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
             // doc.data() is never undefined for query doc snapshots
-
+            console.log(doc.data());
             data.push(doc.data());
-
         });
         console.log(data);
-
-
-    });
-    var countData = [];
-    db.collection("users").get().then(function(querySnapshot) {
-        querySnapshot.forEach(function (doc) {
-            // doc.data() is never undefined for query doc snapshots
-
-            //countData.push(counter(data, doc.id));
-
-        });
-
-        console.log(counter(data, "Jun@gmail.com"));
         $('#datatable-tech').DataTable( {
             key: true,
-
+            "order":[[4, 'desc']],
             data: data,
             columns: [
                 { data: "email" },
                 { data: "first" },
                 { data: "message" },
-                { data: "subject" }
+                { data: "subject" },
+                { data: "count"}
             ]
         } );
+
+
     });
+    // db.collection("users").get().then(function(querySnapshot) {
+    //     querySnapshot.forEach(function (doc) {
+    //         // doc.data() is never undefined for query doc snapshots
+    //
+    //         //countData.push(counter(data, doc.id));
+    //
+    //     });
+    //     console.log(counter(data, "Jun@gmail.com"));
+    //
+    // });
 
 
     // db.collection("users").get().then(function(querySnapshot) {
@@ -372,8 +372,6 @@
 
 
 </script>
-
-
 
 </body>
 </html>

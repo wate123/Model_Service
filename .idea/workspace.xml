@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6ab8d53-56a9-4b79-bb6d-f640533ea96d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/splash.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/splash.iml" afterDir="false" />
+    <list default="true" id="f6ab8d53-56a9-4b79-bb6d-f640533ea96d" name="Default" comment="Technician able to see the prioritizing scheme.&#10;&#10;Login Validation&#10;&#10;Admin page modification">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/TechnicianForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/TechnicianForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/build/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/build/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/production/adminLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/adminLogin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/production/echarts.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/echarts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/production/form_wizards.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/form_wizards.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/vendors/validator/multifield.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/vendors/validator/multifield.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/vendors/validator/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/vendors/validator/validator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/echarts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/production/plain_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/plain_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/production/tables_dynamic.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/tables_dynamic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/production/technicianLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/technicianLogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/technician.html" beforeDir="false" afterPath="$PROJECT_DIR$/technician.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,112 +24,101 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tables_dynamic.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/production/tables_dynamic.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plain_page.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/production/plain_page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7125">
-              <caret line="817" column="28" selection-start-line="817" selection-start-column="28" selection-end-line="817" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="echarts.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/production/echarts.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2685">
-              <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/vendors/validator/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="100" column="91" selection-start-line="100" selection-start-column="72" selection-end-line="100" selection-end-column="91" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="validator.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/vendors/validator/validator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form_wizards.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/production/form_wizards.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="373" column="56" lean-forward="true" selection-start-line="373" selection-start-column="56" selection-end-line="373" selection-end-column="56" />
-              <folding>
-                <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#5;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="multifield.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/vendors/validator/multifield.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="876">
-              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.smartWizard.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="86" column="70" selection-start-line="86" selection-start-column="70" selection-end-line="86" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/build/js/custom.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43530">
-              <caret line="3018" column="21" selection-start-line="3018" selection-start-column="16" selection-end-line="3018" selection-end-column="21" />
-              <folding>
-                <element signature="e#147#936#0" />
-                <element signature="e#1526#4213#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="technicianLogin.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/production/technicianLogin.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="341">
+                  <caret line="62" column="49" lean-forward="true" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+                  <folding>
+                    <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="plain_page.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/production/plain_page.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="795">
+                  <caret line="892" column="13" lean-forward="true" selection-start-line="866" selection-start-column="4" selection-end-line="892" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/contact.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="4545">
+                  <caret line="303" column="36" lean-forward="true" selection-start-line="303" selection-start-column="36" selection-end-line="303" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="echarts.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/production/echarts.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="technician.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/technician.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+                  <folding>
+                    <element signature="n#style#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tables_dynamic.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/admin/production/tables_dynamic.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="504">
+                  <caret line="334" column="27" selection-start-line="334" selection-start-column="27" selection-end-line="334" selection-end-column="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="form_wizards.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/production/form_wizards.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1320">
+                  <caret line="88" column="34" lean-forward="true" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+                  <folding>
+                    <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#0;n#div#5;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="technician.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/technician.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="188">
+                  <caret line="324" column="23" lean-forward="true" selection-start-line="324" selection-start-column="23" selection-end-line="324" selection-end-column="23" />
+                  <folding>
+                    <element signature="n#style#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -140,17 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>labelNext</find>
-      <find>buttons</find>
-      <find>goForward</find>
-      <find>log ou</find>
-      <find>submit</find>
-      <find>admin acc</find>
-      <find>form</find>
-      <find>forms</find>
-      <find>key</find>
-      <find>take</find>
-      <find>..</find>
       <find>keyt</find>
       <find>datatable-ke</find>
       <find>datatable-keytable</find>
@@ -165,11 +144,22 @@
       <find>validateSteps</find>
       <find>confirmation</find>
       <find>rest_confirmation</find>
-      <find>date</find>
       <find>numeric</find>
       <find>number</find>
       <find>age</find>
       <find>firebase.auth</find>
+      <find>date</find>
+      <find>filter</find>
+      <find>form-control</find>
+      <find>custom.min.css</find>
+      <find>sFilterInput</find>
+      <find>tables.html</find>
+      <find>database</find>
+      <find>fa-chevron-down</find>
+      <find>collapse</find>
+      <find>table</find>
+      <find>subject</find>
+      <find>signInConfirm</find>
     </findStrings>
     <replaceStrings>
       <replace>fn</replace>
@@ -196,25 +186,28 @@
         <option value="$PROJECT_DIR$/admin/production/login.html" />
         <option value="$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/firestore-import-export/import-to-firestore.json" />
         <option value="$PROJECT_DIR$/firestore-import-export/import.js" />
         <option value="$PROJECT_DIR$/info.json" />
-        <option value="$PROJECT_DIR$/admin/production/tables_dynamic.html" />
         <option value="$PROJECT_DIR$/admin/production/tables.html" />
         <option value="$PROJECT_DIR$/admin/production/js/signup.js" />
-        <option value="$PROJECT_DIR$/admin/production/technicianLogin.html" />
-        <option value="$PROJECT_DIR$/admin/production/plain_page.html" />
         <option value="$PROJECT_DIR$/admin/production/technician.html" />
         <option value="$PROJECT_DIR$/admin/build/js/custom.js" />
-        <option value="$PROJECT_DIR$/technician.html" />
         <option value="$PROJECT_DIR$/admin/production/index.html" />
-        <option value="$PROJECT_DIR$/admin/production/adminLogin.html" />
-        <option value="$PROJECT_DIR$/admin/production/echarts.html" />
         <option value="$PROJECT_DIR$/admin/production/TechnicianForm.html" />
         <option value="$PROJECT_DIR$/admin/vendors/validator/validator.js" />
         <option value="$PROJECT_DIR$/admin/vendors/validator/multifield.js" />
+        <option value="$PROJECT_DIR$/admin/production/technicianLogin.html" />
+        <option value="$PROJECT_DIR$/admin/production/adminLogin.html" />
+        <option value="$PROJECT_DIR$/contact.html" />
+        <option value="$PROJECT_DIR$/admin/build/css/custom.css" />
+        <option value="$PROJECT_DIR$/admin/vendors/datatables.net-bs/css/dataTables.bootstrap.css" />
+        <option value="$PROJECT_DIR$/admin/vendors/datatables.net-bs/js/dataTables.bootstrap.js" />
+        <option value="$PROJECT_DIR$/technician.html" />
+        <option value="$PROJECT_DIR$/admin/production/plain_page.html" />
+        <option value="$PROJECT_DIR$/admin/production/echarts.html" />
         <option value="$PROJECT_DIR$/admin/production/form_wizards.html" />
+        <option value="$PROJECT_DIR$/admin/production/tables_dynamic.html" />
       </list>
     </option>
   </component>
@@ -259,10 +252,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
-    <option name="y" value="27" />
-    <option name="width" value="960" />
-    <option name="height" value="1053" />
+    <option name="x" value="1919" />
+    <option name="width" value="1922" />
+    <option name="height" value="1081" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -286,14 +278,7 @@
               <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
               <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
-              <item name="validator" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -340,27 +325,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.TechnicianForm.html">
-    <configuration name="TechnicianForm.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/TechnicianForm.html" />
-    <configuration name="echarts.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/echarts.html" />
-    <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/admin/production/index.html" />
+  <component name="RunManager" selected="JavaScript Debug.plain_page.html">
+    <configuration name="contact.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/contact.html" />
     <configuration name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/index.html" />
-    <configuration name="index.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/vendors/validator/index.html" />
+    <configuration name="plain_page.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/plain_page.html" />
+    <configuration name="technicianLogin.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/technicianLogin.html" />
+    <configuration name="technician.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/technician.html" />
     <configuration name="technician.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/technician.html" />
     <list>
-      <item itemvalue="JavaScript Debug.index.html (1)" />
-      <item itemvalue="JavaScript Debug.echarts.html" />
       <item itemvalue="JavaScript Debug.index.html (2)" />
-      <item itemvalue="JavaScript Debug.index.html (3)" />
-      <item itemvalue="JavaScript Debug.TechnicianForm.html" />
+      <item itemvalue="JavaScript Debug.technicianLogin.html" />
+      <item itemvalue="JavaScript Debug.contact.html" />
+      <item itemvalue="JavaScript Debug.technician.html" />
+      <item itemvalue="JavaScript Debug.plain_page.html" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.TechnicianForm.html" />
-        <item itemvalue="JavaScript Debug.index.html (3)" />
+        <item itemvalue="JavaScript Debug.plain_page.html" />
+        <item itemvalue="JavaScript Debug.technician.html" />
+        <item itemvalue="JavaScript Debug.contact.html" />
+        <item itemvalue="JavaScript Debug.technicianLogin.html" />
         <item itemvalue="JavaScript Debug.index.html (2)" />
-        <item itemvalue="JavaScript Debug.echarts.html" />
-        <item itemvalue="JavaScript Debug.index.html (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -387,18 +372,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141331000" />
+    <option name="totallyTimeSpent" value="159424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="0" width="1922" height="1081" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16447021" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14918292" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Messages" weight="0.3294979" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="16" sideWeight="0.5002636" side_tool="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294979" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3294979" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49973643" weight="0.3294979" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.49920928" weight="0.3211297" />
@@ -432,72 +418,10 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/admin" />
     </ignored-roots>
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Technician able to see the prioritizing scheme.&#10;&#10;Login Validation&#10;&#10;Admin page modification" />
+    <option name="LAST_COMMIT_MESSAGE" value="Technician able to see the prioritizing scheme.&#10;&#10;Login Validation&#10;&#10;Admin page modification" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5580">
-          <caret line="372" column="3" selection-start-line="372" selection-start-column="3" selection-end-line="372" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2325">
-          <caret line="155" column="132" selection-start-line="155" selection-start-column="132" selection-end-line="155" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/js/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pricing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="144" column="47" lean-forward="true" selection-start-line="144" selection-start-column="47" selection-end-line="144" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2325">
-          <caret line="155" column="132" selection-start-line="155" selection-start-column="132" selection-end-line="155" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/js/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1815">
-          <caret line="121" column="110" lean-forward="true" selection-start-line="121" selection-start-column="110" selection-end-line="121" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/js/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.txt" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
@@ -578,16 +502,6 @@
     <entry file="file://$PROJECT_DIR$/firestore-import-export/import-to-firestore.json" />
     <entry file="file://$PROJECT_DIR$/firestore-import-export/import.js" />
     <entry file="file://$PROJECT_DIR$/info.json" />
-    <entry file="file://$PROJECT_DIR$/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="283" column="41" selection-start-line="283" selection-start-column="41" selection-end-line="283" selection-end-column="41" />
-          <folding>
-            <element signature="e#7151#7157#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/js/signup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -595,17 +509,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/technicianLogin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="87" column="32" lean-forward="true" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/technician.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="247" column="13" lean-forward="true" selection-start-line="247" selection-start-column="13" selection-end-line="247" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -618,13 +528,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/queue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-834" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/plain_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7125">
-          <caret line="817" column="28" selection-start-line="817" selection-start-column="28" selection-end-line="817" selection-end-column="28" />
+        <state relative-caret-position="-834">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -635,49 +542,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/build/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43530">
-          <caret line="3018" column="21" selection-start-line="3018" selection-start-column="16" selection-end-line="3018" selection-end-column="21" />
-          <folding>
-            <element signature="e#147#936#0" />
-            <element signature="e#1526#4213#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/technician.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="332" column="17" selection-start-line="332" selection-start-column="17" selection-end-line="332" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="753">
           <caret line="117" column="14" lean-forward="true" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/adminLogin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="62" column="57" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/tables_dynamic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="86" column="70" selection-start-line="86" selection-start-column="70" selection-end-line="86" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -701,13 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="359" column="35" selection-start-line="359" selection-start-column="35" selection-end-line="359" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/production/echarts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2685">
-          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -742,13 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/vendors/validator/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="100" column="91" selection-start-line="100" selection-start-column="72" selection-end-line="100" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/vendors/validator/validator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -759,14 +613,153 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/validator/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="100" column="91" selection-start-line="100" selection-start-column="72" selection-end-line="100" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/adminLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-555">
+          <caret line="62" column="64" lean-forward="true" selection-start-line="62" selection-start-column="64" selection-end-line="62" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/build/css/custom.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/datatables.net-bs/css/dataTables.bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-967">
+          <caret line="887" column="29" selection-start-line="887" selection-start-column="17" selection-end-line="887" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/datatables.net/js/jquery.dataTables.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="150" column="430" selection-start-line="150" selection-start-column="430" selection-end-line="150" selection-end-column="430" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/datatables.net-bs/Readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="372" selection-start-line="44" selection-start-column="330" selection-end-line="44" selection-end-column="372" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/datatables.net-bs/js/dataTables.bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="58" column="16" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/technicianLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="62" column="49" lean-forward="true" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="86" column="70" selection-start-line="86" selection-start-column="70" selection-end-line="86" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4545">
+          <caret line="303" column="36" lean-forward="true" selection-start-line="303" selection-start-column="36" selection-end-line="303" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/plain_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="892" column="13" lean-forward="true" selection-start-line="866" selection-start-column="4" selection-end-line="892" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/build/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="2974" column="23" selection-start-line="2974" selection-start-column="23" selection-end-line="2974" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/form_wizards.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="373" column="56" lean-forward="true" selection-start-line="373" selection-start-column="56" selection-end-line="373" selection-end-column="56" />
+        <state relative-caret-position="1320">
+          <caret line="88" column="34" lean-forward="true" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#5;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/echarts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technician.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/build/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="2790" column="12" selection-start-line="2790" selection-start-column="12" selection-end-line="2790" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/production/tables_dynamic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="334" column="27" selection-start-line="334" selection-start-column="27" selection-end-line="334" selection-end-column="27" />
         </state>
       </provider>
     </entry>

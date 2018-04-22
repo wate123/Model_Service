@@ -60,7 +60,7 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+		<script src="admin/vendors/jquery/dist/jquery.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
 
@@ -135,7 +135,7 @@
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label class="sr-only" for="name">Name</label>
-								<input type="text" id="name" class="form-control" placeholder="Your firstname">
+								<input type="text" id="name" class="form-control" required="required" placeholder="Your firstname">
 							</div>
 
 						</div>
@@ -143,21 +143,21 @@
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label class="sr-only" for="email">Email</label>
-								<input type="text" id="email" class="form-control" placeholder="Your email address">
+								<input type="text" id="email" class="form-control" required="required" placeholder="Your email address">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label class="sr-only" for="subject">Subject</label>
-								<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+								<input type="text" id="subject" class="form-control" required="required"placeholder="Your subject of this message">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label class="sr-only" for="message">Message</label>
-								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Request description"></textarea>
+								<textarea name="message" id="message" cols="30" rows="10" class="form-control" required="required" placeholder="Request description"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
@@ -271,21 +271,97 @@
     <script src="admin/vendors/validator/validator.js"></script>
     <script>
         var db = firebase.firestore();
+        // $('#request').submit(function (e) {
+        //     e.preventDefault();
+        //     db.collection("users").add({
+        //         first: document.getElementById("name").value,
+        //         email: document.getElementById("email").value,
+        //         subject: document.getElementById("subject").value,
+        //         message: document.getElementById("message").value
+        //     })
+        //         .then(function(docRef) {
+        //             window.location.reload();
+        //             console.log("Document written with ID: ", docRef.id);
+        //         })
+        //         .catch(function(error) {
+        //             console.error("Error adding document: ", error);
+        //         });
+        // })
+
         $('#request').submit(function (e) {
             e.preventDefault();
-            db.collection("users").add({
-                first: document.getElementById("name").value,
-                email: document.getElementById("email").value,
-                subject: document.getElementById("subject").value,
-                message: document.getElementById("message").value
-            })
-                .then(function(docRef) {
-                    window.location.reload();
-                    console.log("Document written with ID: ", docRef.id);
-                })
-                .catch(function(error) {
-                    console.error("Error adding document: ", error);
-                });
+            var name = document.getElementById("name").value.toLowerCase();
+            var email = document.getElementById("email").value.toLowerCase();
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+            var idDoc = name + "-" + email;
+            var docRef = db.collection("users").doc(idDoc);
+
+            return db.runTransaction(function(transaction) {
+                // This code may get re-run multiple times if there are conflicts.
+                return transaction.get(docRef).then(function(doc) {
+                    if (!doc.exists) {
+                        docRef.set({
+                            first: name.charAt(0).toUpperCase()+name.slice(1),
+                            email: email,
+                            subject: subject,
+                            message: message,
+                            count: 1
+                        });
+                        console.log("Document does not exist!") ;
+                    }else{
+                        var newcount = doc.data().count + 1;
+                        transaction.update(docRef, { count: newcount });
+					}
+                }
+                );
+            }).then(function() {
+                location.reload();
+                console.log("Transaction successfully committed!");
+            }).catch(function(error) {
+                console.log("Transaction failed: ", error);
+            });
+
+
+            // docRef.get().then(function(doc) {
+            //     if (doc.exists) {
+            //         console.log("Document data:", doc.data());
+            //         return docRef.update({
+				// 		count: docRef.1
+				// 	})
+            //     } else {
+            //         // doc.data() will be undefined in this case
+            //         console.log("No such document!");
+            //         docRef.set({
+            //             first: name,
+            //             email: email,
+            //             subject: subject,
+            //             message: message,
+            //             count: 1
+				// 	}).then(function () {
+            //             console.log("Document written with ID: ", docRef.id);
+            //         }).catch(function (error) {
+            //
+            //         })
+            //     }
+            // }).catch(function(error) {
+            //     console.log("Error getting document:", error);
+            // });
+
+            // if () {
+            //
+             //    docRef.set({
+             //        first: name,
+             //        email: email,
+             //        subject: subject,
+             //        message: message,
+             //        count: 1
+             //    }).then(function () {
+            //
+             //    }).catch(function (error) {
+            //
+             //    })
+			// }
         })
 	</script>
 	</body>
