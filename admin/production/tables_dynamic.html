@@ -26,6 +26,7 @@
 
   <!-- Custom Theme Style -->
   <link href="../build/css/custom.min.css" rel="stylesheet">
+
   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
 
@@ -154,7 +155,7 @@
       <div class="">
         <div class="page-title">
           <div class="title_left">
-            <h3>Users</h3>
+            <h3>Customer</h3>
           </div>
 
           <div class="title_right">
@@ -187,12 +188,13 @@
                 <table id="datatable-admin" class="table table-striped jambo_table bulk_action table-bordered">
                   <thead>
                   <tr>
-                    <th>Email</th>
                     <th>First Name</th>
+                    <th>Email</th>
                     <th>Message</th>
                     <th>Subject</th>
                     <th># of Request</th>
-                    <th>Last Date</th>
+                    <th>Difficulty</th>
+                    <th>Requested Time</th>
                   </tr>
                   </thead>
                 </table>
@@ -246,27 +248,35 @@
 <script>
     var db = firebase.firestore();
     var data = [];
-    db.collection("users").get().then(function(querySnapshot) {
+    var usrRef = db.collection("users");
+    usrRef.get().then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
             // doc.data() is never undefined for query doc snapshots
-            console.log(doc.data());
+            console.log(doc.data().count);
             data.push(doc.data());
         });
         console.log(data);
         $('#datatable-admin').DataTable( {
+            stateSave: true,
             key: true,
             "order":[[4, 'desc']],
             data: data,
             columns: [
-                { data: "email" },
                 { data: "first" },
+                { data: "email" },
                 { data: "message" },
                 { data: "subject" },
                 { data: "count"},
+                { data: "difficulty",
+                    "defaultContent": ""},
                 { data: "time",
                   "defaultContent": ""}
             ]
         } );
+        $('#datatable-admin tbody').on( 'click', 'tr', function () {
+            $(this).toggleClass('selected');
+        } );
+
 
 
     });

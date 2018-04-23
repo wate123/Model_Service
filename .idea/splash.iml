@@ -15,8 +15,10 @@
     <orderEntry type="library" name="firebase-firestore" level="application" />
     <orderEntry type="library" name="firebase" level="application" />
     <orderEntry type="library" name="firebase-firestore" level="application" />
-    <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="firebase" level="application" />
     <orderEntry type="library" name="firebase-firestore" level="application" />
+    <orderEntry type="library" name="pdfmake" level="application" />
+    <orderEntry type="library" name="vfs_fonts" level="application" />
+    <orderEntry type="library" name="datatables" level="application" />
   </component>
 </module>
