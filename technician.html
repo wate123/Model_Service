@@ -146,11 +146,13 @@
                                                                             <table id="datatable-tech" class="table table-striped jambo_table bulk_action table-bordered ">
                                                                                 <thead>
                                                                                 <tr>
-                                                                                    <th>First Name</th>
+                                                                                <th>First Name</th>
                                                                                 <th>Email</th>
-                                                                                <th>Message</th>
                                                                                 <th>Subject</th>
-                                                                                    <th># of Request</th>
+                                                                                <th>Message</th>
+                                                                                <th>Total Request</th>
+                                                                                <th>Difficulty</th>
+                                                                                <th>Request Time</th>
                                                                                 </tr>
                                                                                 </thead>
                                                                             </table>
@@ -163,7 +165,7 @@
                                                     </div>
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
-                                                            <button onclick="takeJob()" class="btn btn-primary" type="submit" id="take_request">Take Request</button>
+                                                            <button  class="btn btn-primary" type="button" id="take_request">Take Request</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -324,7 +326,7 @@
 <script src="admin/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
 <!--<script src="admin/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>-->
 <script src="admin/build/js/custom.min.js"></script>
-
+<script src="https://cdn.datatables.net/select/1.2.5/js/dataTables.select.min.js"></script>
 <script>
     var db = firebase.firestore();
     var data = [];
@@ -335,19 +337,36 @@
             data.push(doc.data());
         });
         console.log(data);
-        $('#datatable-tech').DataTable( {
+        var table = $('#datatable-tech').DataTable( {
+            stateSave: true,
             key: true,
-            "order":[[4, 'desc']],
+            //"order":[4,'desc'],
             data: data,
             columns: [
                 { data: "first" },
                 { data: "email" },
-                { data: "message" },
                 { data: "subject" },
-                { data: "count"}
+                { data: "message" },
+                { data: "count",
+                },
+                { data: "difficulty",
+                    "defaultContent": "",
+                },
+                { data: "time",
+                    "defaultContent": ""}
             ]
         } );
+        table.order([4,"desc"], [5,"asc"]).draw();
 
+        $('#take_request').click(function () {
+            var removeData = table.row(':eq(0)', { page: 'current' }).data();
+            db.collection('users').doc(removeData.first.toLowerCase()+"-"+removeData.email).delete().then(function () {
+                console.log("success");
+            }).catch(function (error) {
+                console.log(error);
+            });
+            table.row(':eq(0)', { page: 'current' }).select().remove().draw( false );
+        })
 
     });
     // db.collection("users").get().then(function(querySnapshot) {

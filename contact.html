@@ -279,7 +279,7 @@
             var subject = document.getElementById("subject").value;
             var message = document.getElementById("message").value;
             var idDoc = name + "-" + email;
-            var difficulty = ['Easy','Medium','Hard'];
+            var difficulty = ['1-Easy','2-Medium','3-Hard'];
             var docRef = db.collection("users").doc(idDoc);
 
             return db.runTransaction(function(transaction) {

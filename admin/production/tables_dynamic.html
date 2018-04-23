@@ -192,7 +192,7 @@
                     <th>Email</th>
                     <th>Message</th>
                     <th>Subject</th>
-                    <th># of Request</th>
+                    <th>Total  Request</th>
                     <th>Difficulty</th>
                     <th>Requested Time</th>
                   </tr>
@@ -245,9 +245,11 @@
 
 <!-- Custom Theme Scripts -->
 <script src="../build/js/custom.min.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.10.16/sorting/enum.js"></script>
 <script>
     var db = firebase.firestore();
     var data = [];
+    $.fn.dataTable.enum( [ 'Hard', 'Medium', 'Easy' ] );
     var usrRef = db.collection("users");
     usrRef.get().then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
@@ -256,10 +258,9 @@
             data.push(doc.data());
         });
         console.log(data);
-        $('#datatable-admin').DataTable( {
-            stateSave: true,
+        var table = $('#datatable-admin').DataTable( {
+            //stateSave: true,
             key: true,
-            "order":[[4, 'desc']],
             data: data,
             columns: [
                 { data: "first" },
@@ -273,13 +274,22 @@
                   "defaultContent": ""}
             ]
         } );
+        table.order([4,"desc"], [5,"asc"]).draw();
+
         $('#datatable-admin tbody').on( 'click', 'tr', function () {
-            $(this).toggleClass('selected');
+            if ( $(this).hasClass('selected') ) {
+                $(this).removeClass('selected');
+            }
+            else {
+                table.$('tr.selected').removeClass('selected');
+                $(this).addClass('selected');
+            }
         } );
 
 
 
     });
+
 
 </script>
 </body>

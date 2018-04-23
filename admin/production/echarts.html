@@ -186,51 +186,51 @@
 
                     <div id="mainb" style="height:350px;"></div>
                     <script>
-                      var echartBar = echarts.init(document.getElementById('mainb'));
+                        var echartBar = echarts.init(document.getElementById('mainb'));
 
-          echartBar.setOption({
-          title: {
-            text: 'Customer Wait Time',
-            subtext: '*wait time in seconds'
-          },
-          tooltip: {
-            trigger: 'axis'
-          },
-          legend: {
-            data: ['Wait Time']
-          },
-          toolbox: {
-            show: false
-          },
-          calculable: false,
-          xAxis: [{
-            type: 'category',
-            data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
-          }],
-          yAxis: [{
-            type: 'value'
-          }],
-          series: [ {
-            name: 'Wait Time',
-            type: 'bar',
-            data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
-            markPoint: {
-            data: [ {
-              name: 'purchases',
-              value: 2.3,
-              xAxis: 11,
-              yAxis: 3
-            }]
-            },
-            markLine: {
-            data: [{
-              type: 'average',
-              name: 'Average Waiting Time'
-            }]
-            }
-          }]
-          });
-        </script>
+                        echartBar.setOption({
+                        title: {
+                          text: 'Customer Wait Time',
+                          subtext: '*wait time in seconds'
+                        },
+                        tooltip: {
+                          trigger: 'axis'
+                        },
+                        legend: {
+                          data: ['Wait Time']
+                        },
+                        toolbox: {
+                          show: false
+                        },
+                        calculable: false,
+                        xAxis: [{
+                          type: 'category',
+                          data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+                        }],
+                        yAxis: [{
+                          type: 'value'
+                        }],
+                        series: [ {
+                          name: 'Wait Time',
+                          type: 'bar',
+                          data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+                          markPoint: {
+                          data: [ {
+                            name: 'purchases',
+                            value: 2.3,
+                            xAxis: 11,
+                            yAxis: 3
+                          }]
+                          },
+                          markLine: {
+                          data: [{
+                            type: 'average',
+                            name: 'Average Waiting Time'
+                          }]
+                          }
+                        }]
+                      });
+                    </script>
          <div class="center">
             <div class="list"> 
               <p><strong>Average Wait Time:</strong> <i class="number">  48.07  </i>seconds</p>
