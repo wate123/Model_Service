@@ -311,17 +311,17 @@
             <td>
                 <script>
                     var technicianRate;
-                    document.write(localStorage["skill"] + " Technician ");
-                    if (localStorage["skill"] == "Beginner"){
+                    document.write(localStorage["skill"] + " ");
+                    if (localStorage["skill"] == "John Doe"){ //0 years experience
                         technicianRate = 30;
                         document.write("($30/hour)");
-                    }else if (localStorage["skill"] == "Intermediate"){
-                        technicianRate = 50;
-                        document.write("($50/hour)");
-                    }
-                    else {
+                    }else if (localStorage["skill"] == "Jane Doe"){ //5 years experience
                         technicianRate = 80;
                         document.write("($80/hour)");
+                    }
+                    else { //10 years experience
+                        technicianRate = 130;
+                        document.write("($180/hour)");
                     }
                 </script>
 
