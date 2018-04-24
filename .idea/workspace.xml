@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6ab8d53-56a9-4b79-bb6d-f640533ea96d" name="Default" comment="Technician able to see the prioritizing scheme.&#10;&#10;Login Validation&#10;&#10;Admin page modification">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/production/tables_dynamic.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/tables_dynamic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/technician.html" beforeDir="false" afterPath="$PROJECT_DIR$/technician.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5229244">
+    <splitter split-orientation="horizontal" split-proportion="0.4213135">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="technician.html" pinned="false" current-in-tab="false">
@@ -28,7 +27,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="tables_dynamic.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="tables_dynamic.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/admin/production/tables_dynamic.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="211">
@@ -76,6 +75,15 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="562">
+                  <caret line="118" column="90" lean-forward="true" selection-start-line="118" selection-start-column="90" selection-end-line="118" selection-end-column="90" />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -92,8 +100,8 @@
           <file leaf-file-name="technician.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/technician.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="796">
-                  <caret line="399" column="10" lean-forward="true" selection-start-line="399" selection-start-column="10" selection-end-line="399" selection-end-column="10" />
+                <state relative-caret-position="346">
+                  <caret line="360" column="36" lean-forward="true" selection-start-line="360" selection-start-column="36" selection-end-line="360" selection-end-column="36" />
                   <folding>
                     <element signature="n#style#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="e#15252#15258#0" expanded="true" />
@@ -116,7 +124,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>number</find>
       <find>age</find>
       <find>firebase.auth</find>
       <find>date</find>
@@ -146,6 +153,7 @@
       <find>gtco-cover</find>
       <find>gtco</find>
       <find>index</find>
+      <find>x_</find>
     </findStrings>
     <replaceStrings>
       <replace>fn</replace>
@@ -192,9 +200,9 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/admin/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js" />
         <option value="$PROJECT_DIR$/admin/production/form_wizards.html" />
-        <option value="$PROJECT_DIR$/technician.html" />
         <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/admin/production/tables_dynamic.html" />
+        <option value="$PROJECT_DIR$/technician.html" />
       </list>
     </option>
   </component>
@@ -345,27 +353,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.form_buttons.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="form_buttons.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/admin/production/form_buttons.html" />
     <configuration name="form_wizards.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/admin/production/form_wizards.html" />
-    <configuration name="tables_dynamic.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/admin/production/tables_dynamic.html" />
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/index.html" />
     <configuration name="technician.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/technician.html" />
     <configuration name="technician.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSC-4330/technician.html" />
     <configuration name="technician.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CSC-4330/technician.html" />
     <list>
-      <item itemvalue="JavaScript Debug.tables_dynamic.html (1)" />
       <item itemvalue="JavaScript Debug.technician.html" />
       <item itemvalue="JavaScript Debug.technician.html (1)" />
       <item itemvalue="JavaScript Debug.form_wizards.html" />
       <item itemvalue="JavaScript Debug.form_buttons.html" />
+      <item itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.form_buttons.html" />
         <item itemvalue="JavaScript Debug.technician.html (1)" />
         <item itemvalue="JavaScript Debug.form_wizards.html" />
         <item itemvalue="JavaScript Debug.technician.html" />
-        <item itemvalue="JavaScript Debug.tables_dynamic.html (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -394,20 +402,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199803000" />
+    <option name="totallyTimeSpent" value="200205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14918292" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14918292" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="16" sideWeight="0.5002636" side_tool="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49973643" weight="0.3294979" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="15" sideWeight="0.49920928" visible="true" weight="0.32017544" />
+      <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.49920928" weight="0.32017544" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -532,6 +540,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="247" column="13" lean-forward="true" selection-start-line="247" selection-start-column="13" selection-end-line="247" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#15252#15258#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -680,13 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="86" column="70" selection-start-line="86" selection-start-column="70" selection-end-line="86" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bill.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -743,19 +748,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/technician.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="824">
-          <caret line="371" column="8" selection-start-line="371" selection-start-column="8" selection-end-line="371" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/tables_dynamic.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="273" column="8" selection-start-line="273" selection-start-column="8" selection-end-line="273" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="118" column="90" lean-forward="true" selection-start-line="118" selection-start-column="90" selection-end-line="118" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/technician.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="360" column="36" lean-forward="true" selection-start-line="360" selection-start-column="36" selection-end-line="360" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#15252#15258#0" expanded="true" />
           </folding>
         </state>
       </provider>
