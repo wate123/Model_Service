@@ -237,9 +237,9 @@
 	<script src="js/main.js"></script>
 
     <script src="admin/vendors/validator/validator.js"></script>
-    <script>
+	<script>
         var db = firebase.firestore();
-		console.log(new Date().toLocaleString());
+        console.log(new Date().toLocaleString());
         $('#request').submit(function (e) {
             e.preventDefault();
             var name = document.getElementById("name").value.toLowerCase();
@@ -253,32 +253,64 @@
             return db.runTransaction(function(transaction) {
                 // This code may get re-run multiple times if there are conflicts.
                 return transaction.get(docRef).then(function(doc) {
-                    if (!doc.exists) {
-                        docRef.set({
-                            first: name.charAt(0).toUpperCase()+name.slice(1),
-                            email: email,
-                            subject: subject,
-                            message: message,
-                            count: 1,
-                            difficulty: difficulty[Math.floor(Math.random() * difficulty.length)],
-							time: new Date().toLocaleString()
-                        });
-                        console.log("Document does not exist!") ;
-                    }else{
-                        var newcount = doc.data().count + 1;
-                        transaction.update(docRef, { count: newcount });
-                        transaction.update(docRef, { subject: subject });
-                        transaction.update(docRef, { message: message });
-                        transaction.update(docRef, { time: new Date().toLocaleString() });
-					}
-                }
+                        var calDiff = difficulty[Math.floor(Math.random() * difficulty.length)];
+                        var timeNow = new Date().toLocaleString();
+                        if (!doc.exists) {
+                            docRef.set({
+                                first: name.charAt(0).toUpperCase()+name.slice(1),
+                                email: email,
+                                subject: subject,
+                                message: message,
+                                count: 0,
+                                difficulty: calDiff,
+                                time: timeNow
+                            });
+
+                            console.log("Document does not exist!") ;
+                        }else{
+                            var newcount = doc.data().count + 1;
+                            transaction.update(docRef, { count: newcount });
+                            transaction.update(docRef, { subject: subject });
+                            transaction.update(docRef, { message: message });
+                            transaction.update(docRef, { time: timeNow });
+                        }
+                    }
                 );
             }).then(function() {
-                location.reload();
                 console.log("Transaction successfully committed!");
             }).catch(function(error) {
                 console.log("Transaction failed: ", error);
             });
+
+            // return db.runTransaction(function(transaction) {
+            //     // This code may get re-run multiple times if there are conflicts.
+            //     return transaction.get(UserdocRef).then(function(doc) {
+            //             if (!doc.exists) {
+            //                 UserdocRef.set({
+            //                     first: name.charAt(0).toUpperCase()+name.slice(1),
+            //                     email: email,
+            //                     subject: subject,
+            //                     message: message,
+            //                     count: 0,
+            //                     difficulty: calDiff,
+            //                     time: timeNow
+            //                 });
+            //                 console.log("Document does not exist!") ;
+            //             }else{
+            //                 var newcount = doc.data().count + 1;
+            //                 transaction.update(UserdocRef, { count: newcount });
+            //                 transaction.update(UserdocRef, { subject: subject });
+            //                 transaction.update(UserdocRef, { message: message });
+            //                 transaction.update(UserdocRef, { time: timeNow });
+            //             }
+            //         }
+            //     );
+            // }).then(function() {
+            //     location.reload();
+            //     console.log("Transaction successfully committed!");
+            // }).catch(function(error) {
+            //     console.log("Transaction failed: ", error);
+            // });
 
         });
 	</script>

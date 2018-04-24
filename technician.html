@@ -322,10 +322,22 @@
 <script>
     var db = firebase.firestore();
     var data = [];
-    db.collection("users").get().then(function(querySnapshot) {
+    db.collection("queue").get().then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
             // doc.data() is never undefined for query doc snapshots
             console.log(doc.data());
+            //batch Write Script
+            // var idDoc = doc.data().first + "-" + doc.data().email;
+            // var docRef = db.collection("queue").doc(idDoc);
+            // docRef.set({
+            //     first: doc.data().first,
+            //     email: doc.data().email,
+            //     subject: doc.data().subject,
+            //     message: doc.data().message,
+            //     count: doc.data().count,
+            //     difficulty: doc.data().difficulty,
+            //     time: doc.data().time
+            // });
             data.push(doc.data());
         });
         console.log(data);
@@ -352,11 +364,31 @@
 
         $('#take_request').click(function () {
             var removeData = table.row(':eq(0)', { page: 'current' }).data();
-            db.collection('users').doc(removeData.first.toLowerCase()+"-"+removeData.email).delete().then(function () {
+            var backupRef  = db.collection('backup').doc(removeData.first.toLowerCase()+"-"+removeData.email);
+            backupRef.get().then(function(doc) {
+                if (doc.exists) {
+                    console.log("Document data:", doc.data());
+                } else {
+                    // doc.data() will be undefined in this case
+                    backupRef.set({
+                        first: removeData.first,
+                        email: removeData.email,
+                        subject: removeData.subject,
+                        message: removeData.message,
+                        count: removeData.count,
+                        difficulty: removeData.difficulty,
+                        time: removeData.time
+                    })
+                }
+            }).catch(function(error) {
+                console.log("Error getting document:", error);
+            });
+            db.collection('queue').doc(removeData.first.toLowerCase()+"-"+removeData.email).delete().then(function () {
                 console.log("success");
             }).catch(function (error) {
                 console.log(error);
             });
+
             table.row(':eq(0)', { page: 'current' }).select().remove().draw( false );
         })
 
