@@ -246,7 +246,7 @@
             var email = document.getElementById("email").value.toLowerCase();
             var subject = document.getElementById("subject").value;
             var message = document.getElementById("message").value;
-            var idDoc = name + "-" + email;
+            var idDoc = name.charAt(0).toUpperCase()+name.slice(1) + "-" + email;
             var difficulty = ['1-Easy','2-Medium','3-Hard'];
             var docRef = db.collection("queue").doc(idDoc);
 

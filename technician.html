@@ -151,6 +151,7 @@
                                                                             <table id="datatable-tech" class="table table-striped jambo_table bulk_action table-bordered ">
                                                                                 <thead>
                                                                                 <tr>
+                                                                                    <th>Emergency</th>
                                                                                 <th>First Name</th>
                                                                                 <th>Email</th>
                                                                                 <th>Subject</th>
@@ -185,7 +186,7 @@
                                                                 //var name = document.getElementById("customerName").value;
                                                                 localStorage.setItem("name", document.getElementById("customerName").value);
                                                             </script>
-                                                            <input type="text" id="name" class="form-control" placeholder="Customer's name">
+                                                            <input type="text" id="name" class="form-control" placeholder="Customer's First Name">
                                                         </div>
                                                     </div>
                                                     <div class="row form-group">
@@ -197,34 +198,30 @@
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
 
-                                                            <select id="skill" name="mydropdown" class="form-control">
+                                                            <select name="mydropdown" class="form-control">
                                                                 <option value="John Doe">John Doe</option>
                                                                 <option value="Jane Doe">Jane Doe</option>
                                                                 <option value="Tim Smith">Tim Smith</option>
                                                             </select>
+                                                            <p style="color: red" id="request_confirmation1"></p>
                                                         </div>
+
                                                     </div>
                                                     <div class="form-group">
-                                                        <p id="request_confirmation1"></p>
                                                         <!--<form name="billForm" action="bill.html">-->
                                                             <button  onclick="generateBill()" type="button" value="Generate" class="btn btn-primary">Generate
                                                                 <script>
                                                                     function generateBill(){
-                                                                    var name = document.getElementById("name").value;
-                                                                    var technicianSkill = document.getElementById("skill").value;
-                                                                    var hours = document.getElementById("hours").value;
-                                                                    var requestConfirm = document.getElementById('request_confirmation1');
-                                                                    localStorage.setItem("hours", hours);
-                                                                    localStorage.setItem("name", name);
-                                                                    localStorage.setItem("skill", technicianSkill);
+                                                                        var name = document.getElementById("customerName").value;
+                                                                        var hours = document.getElementById("hours").value;
+                                                                        var requestConfirm = document.getElementById("request_confirmation1").value;
 
-                                                                    if (name === "")
-                                                                        requestConfirm.innerHTML = "Please enter your name.";
-                                                                    else if (hours === "")
-                                                                        requestConfirm.innerHTML = "Please enter the number of hours required.";
-                                                                    else
-                                                                        window.location.href= "bill.html?data="+name;
-                                                                }
+                                                                        if (name === "")
+                                                                            requestConfirm.innerHTML = "Please enter your name.";
+                                                                        else if (hours === "")
+                                                                            requestConfirm.innerHTML = "Please enter the number of hours required.";
+                                                                        window.location.href= "bill.html"
+                                                                    }
                                                                 </script>
                                                             </button>
                                                         <!--<input type="submit" value="Generate" class="btn btn-primary">-->
@@ -347,11 +344,13 @@
         });
         console.log(data);
         var table = $('#datatable-tech').DataTable( {
-            stateSave: true,
+            //stateSave: true,
             key: true,
             //"order":[4,'desc'],
             data: data,
             columns: [
+                {data: "priority",
+                    "defaultContent":""},
                 { data: "first" },
                 { data: "email" },
                 { data: "subject" },
@@ -362,33 +361,20 @@
                     "defaultContent": "",
                 },
                 { data: "time",
-                    "defaultContent": ""}
+                    "defaultContent": "",
+                }
             ]
         } );
-        table.order([4,"desc"], [5,"asc"]).draw();
+        table.column(0).visible(false);
+        table.order([0,"desc"], [4,"desc"], [5,"asc"],[6, "asc"]).draw();
 
         $('#take_request').click(function () {
             var removeData = table.row(':eq(0)', { page: 'current' }).data();
-            // var backupRef  = db.collection('backup').doc(removeData.first.toLowerCase()+"-"+removeData.email);
-            // backupRef.get().then(function(doc) {
-            //     if (doc.exists) {
-            //         console.log("Document data:", doc.data());
-            //     } else {
-            //         // doc.data() will be undefined in this case
-            //         backupRef.set({
-            //             first: removeData.first,
-            //             email: removeData.email,
-            //             subject: removeData.subject,
-            //             message: removeData.message,
-            //             count: removeData.count,
-            //             difficulty: removeData.difficulty,
-            //             time: removeData.time
-            //         })
-            //     }
-            // }).catch(function(error) {
-            //     console.log("Error getting document:", error);
-            // });
-            db.collection('queue').doc(removeData.first.toLowerCase()+"-"+removeData.email).delete().then(function () {
+            var currentTime = Date.now();
+            db.collection('work_hour').doc(removeData.first+"-"+removeData.email).set({
+                work_hours: (currentTime - Date.parse(removeData.time)) / 3600000.0
+            });
+            db.collection('queue').doc(removeData.first+"-"+removeData.email).delete().then(function () {
                 console.log("success");
             }).catch(function (error) {
                 console.log(error);
