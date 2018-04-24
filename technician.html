@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>MODEL &mdash; Free Website Template, Free HTML5 Template by FreeHTML5.co</title>
+    <title>MODEL &mdash; Technician Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
     <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -42,7 +42,8 @@
     <!-- Themify Icons-->
     <link rel="stylesheet" href="css/themify-icons.css">
     <!-- Bootstrap  -->
-    <link href="admin/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
 
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -54,7 +55,7 @@
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Custom Theme Style -->
-    <link href="admin/build/css/custom.min.css" rel="stylesheet">
+    
 
     <link href="admin/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
     <link href="admin/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
@@ -105,7 +106,7 @@
 
                 <div class="row">
                     <div class="col-sm-4 col-xs-12">
-                        <div id="gtco-logo"><a href="admin/production/index.html">MODEL <em>.</em></a></div>
+                        <div id="gtco-logo"><a href="index.html">MODEL <em>.</em></a></div>
                     </div>
                 </div>
 
@@ -192,34 +193,29 @@
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
 
-                                                            <select id="skill" name="mydropdown" class="form-control">
-                                                                <option value="John Doe">John Doe</option>
-                                                                <option value="Jane Doe">Jane Doe</option>
-                                                                <option value="Tim Smith">Tim Smith</option>
+                                                            <select name="mydropdown" class="form-control">
+                                                                <option value="Beginner">Beginner</option>
+                                                                <option value="Intermediate">Intermediate</option>
+                                                                <option value="Expert">Expert</option>
                                                             </select>
                                                         </div>
+                                                        <p id="request_confirmation1"></p>
                                                     </div>
                                                     <div class="form-group">
-                                                        <p id="request_confirmation1"></p>
                                                         <!--<form name="billForm" action="bill.html">-->
-                                                            <button  onclick="generateBill()" type="button" value="Generate" class="btn btn-primary">Generate
+                                                            <button  onclick="generateBill()" type="submit" value="Generate" class="btn btn-primary">Generate
                                                                 <script>
                                                                     function generateBill(){
-                                                                    var name = document.getElementById("name").value;
-                                                                    var technicianSkill = document.getElementById("skill").value;
-                                                                    var hours = document.getElementById("hours").value;
-                                                                    var requestConfirm = document.getElementById('request_confirmation1');
-                                                                    localStorage.setItem("hours", hours);
-                                                                    localStorage.setItem("name", name);
-                                                                    localStorage.setItem("skill", technicianSkill);
+                                                                        var name = document.getElementById("customerName").value;
+                                                                        var hours = document.getElementById("hours").value;
+                                                                        var requestConfirm = document.getElementById("request_confirmation1").value;
 
-                                                                    if (name === "")
-                                                                        requestConfirm.innerHTML = "Please enter your name.";
-                                                                    else if (hours === "")
-                                                                        requestConfirm.innerHTML = "Please enter the number of hours required.";
-                                                                    else
-                                                                        window.location.href= "bill.html?data="+name;
-                                                                }
+                                                                        if (name === "")
+                                                                            requestConfirm.innerHTML = "Please enter your name.";
+                                                                        else if (hours === "")
+                                                                            requestConfirm.innerHTML = "Please enter the number of hours required.";
+                                                                        window.location.href= "bill.html"
+                                                                    }
                                                                 </script>
                                                             </button>
                                                         <!--<input type="submit" value="Generate" class="btn btn-primary">-->
@@ -240,67 +236,54 @@
             </div>
 
         </header>
-
         <footer id="gtco-footer" role="contentinfo">
-            <div class="gtco-container">
-                <div class="row row-p	b-md">
+                    <div class="gtco-container">
+                        <div class="row row-p   b-md">
 
-                    <div class="col-md-4">
-                        <div class="gtco-widget">
-                            <h3>About <span class="footer-logo">MODEL<span>.<span></span></span></span></h3>
-                            <p>MODEL Computing Services has provided this web-based system to give customers the ability to create requests in order get assistance in technical work. </p>
+                            <div class="col-md-4">
+                                <div class="gtco-widget">
+                                    <h3>About <span class="footer-logo">MODEL<span>.<span></span></span></span></h3>
+                                    <p>MODEL Computing Services has provided this web-based system to give customers the ability to create requests in order get assistance in technical work. </p>
+                                </div>
+                            </div>
+
+                           
+                        <div class="col-md-4 col-md-push-1">
+                            <div class="gtco-widget">
+                                <h3>Links</h3>
+                                <ul class="gtco-footer-links">
+                                    <li><a href="index.html">Home Page</a></li>
+                                    <li><a href="admin/production/adminLogin.html">Admin Access</a></li>
+                                    <li><a href="admin/production/technicianLogin.html">Technician Access</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-4 col-md-push-1">
-                        <div class="gtco-widget">
-                            <h3>Links</h3>
-                            <ul class="gtco-footer-links">
-                                <li><a href="#">Knowledge Base</a></li>
-                                <li><a href="#">Career</a></li>
-                                <li><a href="#">Press</a></li>
-                                <li><a href="#">Terms of services</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                            </ul>
+                            <div class="col-md-4">
+                                <div class="gtco-widget">
+                                  
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
 
-                    <div class="col-md-4">
-                        <div class="gtco-widget">
-                            <h3>Get In Touch</h3>
-                            <ul class="gtco-quick-contact">
-                                <li><a href="#"><i class="icon-phone"></i> +1 234 567 890</a></li>
-                                <li><a href="#"><i class="icon-mail2"></i> info@FreeHTML5.co</a></li>
-                                <li><a href="#"><i class="icon-chat"></i> Live Chat</a></li>
-                            </ul>
+                        <div class="row copyright">
+                            <div class="col-md-12">
+                                <p class="pull-left">
+                                    <small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
+                                  <small class="block"> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+                                </p>
+                                
+                            </div>
                         </div>
+
                     </div>
-
-                </div>
-
-                <div class="row copyright">
-                    <div class="col-md-12">
-                        <p class="pull-left">
-                            <small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
-                            <small class="block">Designed by <a href="http://FreeHTML5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
-                        </p>
-                        <p class="pull-right">
-                        <ul class="gtco-social-icons pull-right">
-                            <li><a href="#"><i class="icon-twitter"></i></a></li>
-                            <li><a href="#"><i class="icon-facebook"></i></a></li>
-                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                            <li><a href="#"><i class="icon-dribbble"></i></a></li>
-                        </ul>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
         </footer>
+       
     </div>
 
 </div>
-
+ 
 <div class="gototop js-top">
     <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 </div>
@@ -396,6 +379,7 @@
 
 
 </script>
+
 
 </body>
 </html>
