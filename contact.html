@@ -239,7 +239,7 @@
     <script src="admin/vendors/validator/validator.js"></script>
     <script>
         var db = firebase.firestore();
-		console.log(new Date().toDateString());
+		console.log(new Date().toLocaleString());
         $('#request').submit(function (e) {
             e.preventDefault();
             var name = document.getElementById("name").value.toLowerCase();
@@ -248,7 +248,7 @@
             var message = document.getElementById("message").value;
             var idDoc = name + "-" + email;
             var difficulty = ['1-Easy','2-Medium','3-Hard'];
-            var docRef = db.collection("users").doc(idDoc);
+            var docRef = db.collection("queue").doc(idDoc);
 
             return db.runTransaction(function(transaction) {
                 // This code may get re-run multiple times if there are conflicts.

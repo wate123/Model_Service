@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f6ab8d53-56a9-4b79-bb6d-f640533ea96d" name="Default" comment="Technician able to see the prioritizing scheme.&#10;&#10;Login Validation&#10;&#10;Admin page modification">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/production/tables_dynamic.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/production/tables_dynamic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/technician.html" beforeDir="false" afterPath="$PROJECT_DIR$/technician.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +20,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="300" column="72" lean-forward="true" selection-start-line="300" selection-start-column="72" selection-end-line="300" selection-end-column="72" />
+            <state relative-caret-position="-31">
+              <caret line="250" column="37" selection-start-line="250" selection-start-column="37" selection-end-line="250" selection-end-column="37" />
+              <folding>
+                <element signature="e#6326#6332#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tables_dynamic.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/production/tables_dynamic.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="252" column="34" lean-forward="true" selection-start-line="252" selection-start-column="34" selection-end-line="252" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="technician.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/technician.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="355" column="37" lean-forward="true" selection-start-line="355" selection-start-column="37" selection-end-line="355" selection-end-column="37" />
+              <folding>
+                <element signature="n#style#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#15678#15684#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,11 +66,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>log out</find>
-      <find>finish</find>
-      <find>password</find>
-      <find>validateStep1</find>
-      <find>validateSteps</find>
       <find>confirmation</find>
       <find>rest_confirmation</find>
       <find>numeric</find>
@@ -68,6 +91,11 @@
       <find>request</find>
       <find>reque</find>
       <find>reques</find>
+      <find>style.css</find>
+      <find>.gtco-cov</find>
+      <find>body</find>
+      <find>body {</find>
+      <find>tab</find>
     </findStrings>
     <replaceStrings>
       <replace>fn</replace>
@@ -113,9 +141,10 @@
         <option value="$PROJECT_DIR$/admin/production/plain_page.html" />
         <option value="$PROJECT_DIR$/admin/production/form_wizards.html" />
         <option value="$PROJECT_DIR$/admin/production/echarts.html" />
+        <option value="$PROJECT_DIR$/contact.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/technician.html" />
         <option value="$PROJECT_DIR$/admin/production/tables_dynamic.html" />
-        <option value="$PROJECT_DIR$/contact.html" />
       </list>
     </option>
   </component>
@@ -185,7 +214,79 @@
               <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
               <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+              <item name="datatables.net-bs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+              <item name="datatables.net-bs" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSC-4330" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC-4330" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+              <item name="validator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -280,13 +381,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187873000" />
+    <option name="totallyTimeSpent" value="192396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="0" width="1922" height="1081" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14918292" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14918292" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Messages" weight="0.3294979" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
@@ -295,7 +396,7 @@
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.3294979" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49973643" weight="0.3294979" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="15" sideWeight="0.49920928" visible="true" weight="0.3211297" />
+      <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.49920928" weight="0.3211297" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -332,16 +433,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Technician able to see the prioritizing scheme.&#10;&#10;Login Validation&#10;&#10;Admin page modification" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/technician.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.txt" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
@@ -432,6 +523,7 @@
           <caret line="247" column="13" lean-forward="true" selection-start-line="247" selection-start-column="13" selection-end-line="247" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#15678#15684#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -532,13 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-967">
-          <caret line="887" column="29" selection-start-line="887" selection-start-column="17" selection-end-line="887" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/vendors/datatables.net/js/jquery.dataTables.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="586">
@@ -552,9 +637,6 @@
           <caret line="44" column="372" selection-start-line="44" selection-start-column="330" selection-end-line="44" selection-end-column="372" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/technicianLogin.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -577,13 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="2974" column="23" selection-start-line="2974" selection-start-column="23" selection-end-line="2974" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/build/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="2790" column="12" selection-start-line="2790" selection-start-column="12" selection-end-line="2790" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -629,27 +704,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contact.html">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="300" column="72" lean-forward="true" selection-start-line="300" selection-start-column="72" selection-end-line="300" selection-end-column="72" />
+        <state relative-caret-position="1031">
+          <caret line="902" column="14" selection-start-line="902" selection-start-column="14" selection-end-line="902" selection-end-column="14" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/build/css/custom.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/build/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="494" column="21" lean-forward="true" selection-start-line="494" selection-start-column="21" selection-end-line="494" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="250" column="37" selection-start-line="250" selection-start-column="37" selection-end-line="250" selection-end-column="37" />
+          <folding>
+            <element signature="e#6326#6332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/vendors/bootstrap/dist/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/technician.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+        <state relative-caret-position="370">
+          <caret line="355" column="37" lean-forward="true" selection-start-line="355" selection-start-column="37" selection-end-line="355" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#15678#15684#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/production/tables_dynamic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="279" column="48" selection-start-line="279" selection-start-column="48" selection-end-line="279" selection-end-column="48" />
+        <state relative-caret-position="366">
+          <caret line="252" column="34" lean-forward="true" selection-start-line="252" selection-start-column="34" selection-end-line="252" selection-end-column="34" />
         </state>
       </provider>
     </entry>
