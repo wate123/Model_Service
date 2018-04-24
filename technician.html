@@ -364,25 +364,25 @@
 
         $('#take_request').click(function () {
             var removeData = table.row(':eq(0)', { page: 'current' }).data();
-            var backupRef  = db.collection('backup').doc(removeData.first.toLowerCase()+"-"+removeData.email);
-            backupRef.get().then(function(doc) {
-                if (doc.exists) {
-                    console.log("Document data:", doc.data());
-                } else {
-                    // doc.data() will be undefined in this case
-                    backupRef.set({
-                        first: removeData.first,
-                        email: removeData.email,
-                        subject: removeData.subject,
-                        message: removeData.message,
-                        count: removeData.count,
-                        difficulty: removeData.difficulty,
-                        time: removeData.time
-                    })
-                }
-            }).catch(function(error) {
-                console.log("Error getting document:", error);
-            });
+            // var backupRef  = db.collection('backup').doc(removeData.first.toLowerCase()+"-"+removeData.email);
+            // backupRef.get().then(function(doc) {
+            //     if (doc.exists) {
+            //         console.log("Document data:", doc.data());
+            //     } else {
+            //         // doc.data() will be undefined in this case
+            //         backupRef.set({
+            //             first: removeData.first,
+            //             email: removeData.email,
+            //             subject: removeData.subject,
+            //             message: removeData.message,
+            //             count: removeData.count,
+            //             difficulty: removeData.difficulty,
+            //             time: removeData.time
+            //         })
+            //     }
+            // }).catch(function(error) {
+            //     console.log("Error getting document:", error);
+            // });
             db.collection('queue').doc(removeData.first.toLowerCase()+"-"+removeData.email).delete().then(function () {
                 console.log("success");
             }).catch(function (error) {

@@ -143,6 +143,7 @@
     </div>
     <!-- /top navigation -->
 
+
     <!-- page content -->
     <div class="right_col" role="main">
       <div class="">
@@ -171,6 +172,7 @@
 
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
+
               <div class="x_title">
                 <h2>Customer Information</h2>
                 <ul class="nav navbar-right panel_toolbox">
@@ -180,6 +182,7 @@
               <div class="x_content">
                 <table id="datatable-admin" class="table table-striped jambo_table bulk_action table-bordered">
                   <thead>
+
                   <tr>
                     <th>First Name</th>
                     <th>Email</th>
@@ -192,7 +195,9 @@
                   </thead>
                 </table>
               </div>
+              <button id="emergency" type="button" class="btn btn btn-danger">Emergency</button>
             </div>
+
           </div>
 
 
@@ -238,7 +243,7 @@
     var db = firebase.firestore();
     var data = [];
     $.fn.dataTable.enum( [ 'Hard', 'Medium', 'Easy' ] );
-    var usrRef = db.collection("users");
+    var usrRef = db.collection("queue");
     usrRef.get().then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
             // doc.data() is never undefined for query doc snapshots
@@ -272,7 +277,9 @@
                 $(this).addClass('selected');
             }
         } );
-
+        $('#emergency').click(function () {
+            console.log(table.row('.selected').data());
+        })
 
 
     });
